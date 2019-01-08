@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   padding-right: 40px;
-
 }
 
 h1 {
@@ -38,14 +37,12 @@ h2 {
   display: flex;  
   justify-content: center;
   border: 1px dotted black;
-
 }
 
 .intro {
   display: flex;
   border: 1px dotted black;
   margin: 0 30px 0 30px;
-
 }
 
 .portfolio {
@@ -60,7 +57,6 @@ h2 {
   justify-content: space-around;
   flex-flow: row wrap;
   padding-right: 40px 
-
 }
 
 .project {
@@ -68,5 +64,4 @@ h2 {
   width: 400px;
   height: 200px;
   margin: 20px;
-
 }
