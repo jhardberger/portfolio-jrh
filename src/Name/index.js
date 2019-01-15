@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import NamePara from '../NamePara';
+// import NamePara from '../NamePara';
+
+// {
+// 	image: '',
+// 	amount: 0.9,
+// 	slowerScrollRate: true, 
+// 	children: <NamePara />
+
+// }	
 
 class Name extends Component {
 	render(){
@@ -11,15 +19,15 @@ class Name extends Component {
 						className='splash-parallax'
 						layers={[
 							{
-								image: '/iceland.png',
-								amount: 0.2,
+								image: '/iceland_001.png',
+								amount: 0,
 							},{
-								image: '',
-								amount: 0.9,
-								slowerScrollRate: true, 
-								children: <NamePara />
-
-							}		
+								image: '/iceland_002.png',
+								amount: 0.4,
+							},{
+								image: '/iceland_003.png',
+								amount: 0.1,
+							}	
 						]}
 						style={{
 							height: '800px'
