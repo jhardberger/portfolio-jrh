@@ -4,7 +4,8 @@ import Nav           from '../Nav/index';
 import Bio           from '../Bio/index';
 import WorkContainer from '../WorkContainer/index';
 
-import { Slide }            from 'react-reveal';
+import { StickyContainer } from 'react-sticky';
+import { Slide }           from 'react-reveal';
 
 class Body extends Component {
 	constructor(props){
@@ -12,12 +13,12 @@ class Body extends Component {
 	}
 	render(){
 		return(
-			<div className='body'>
+			<StickyContainer className='body'>
 	            <Slide top when={this.props.showNav}>
-	              <Nav />
+	            	<Nav />
 	            </Slide> 
 	            <Bio />
-          	</div>
+          	</StickyContainer>
 		)
 	}
 }
