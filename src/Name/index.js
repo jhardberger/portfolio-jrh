@@ -1,43 +1,42 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+import { Fade }           from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
-// import NamePara from '../NamePara';
+import Waypoint 		  from 'react-waypoint';
 
-// {
-// 	image: '',
-// 	amount: 0.9,
-// 	slowerScrollRate: true, 
-// 	children: <NamePara />
 
-// }	
+const Name = (props) => {
 
-class Name extends Component {
-	render(){
-		return(
-			<div className='splash-page'>
-				<div className='name-splash'>
-					<ParallaxBanner
-						className='splash-parallax'
-						layers={[
-							{
-								image: '/iceland_001.png',
-								amount: 0,
-							},{
-								image: '/iceland_002.png',
-								amount: 0.4,
-							},{
-								image: '/iceland_003.png',
-								amount: 0.1,
-							}	
-						]}
-						style={{
-							height: '800px'
-						}}
-					>
-					</ParallaxBanner>
-				</div>
+	const handleClickNav = props.handleClickNav.bind(this);
 
-			</div>
-		)
-	}
+	return(
+		<div className='splash-page'>
+			<Fade big>
+				<ParallaxBanner
+					className='splash-parallax'
+					layers={[
+						{
+							image: '/iceland_001.png',
+							amount: 0,
+						},{
+							image: '/iceland_002.png',
+							amount: 0.5,
+
+						},{
+							image: '/iceland_003.png',
+							amount: 0.1,
+						}
+					]}
+					style={{
+						height: '700px'
+					}}
+				>
+				</ParallaxBanner>
+			</Fade>
+
+			<Waypoint onLeave={handleClickNav} />
+
+		</div>
+	)
 }
 export default Name;

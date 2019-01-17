@@ -33,6 +33,21 @@ h2 {
   justify-content: center;
 }
 
+.drop-cap-graf:first-letter {
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  float: left;
+  line-height: .9;
+  padding-right: 3px;
+  margin-left: .3em;
+}
+
+.bio {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .intro {
   display: flex;
   border: 1px dotted black;
@@ -60,10 +75,6 @@ h2 {
   margin: 20px;
 }
 
-.name-splash {
-
-}
-
 .name-parallax {
   position: relative;
   z-index: 1;
@@ -79,4 +90,9 @@ h2 {
 .letter {
   border: red dotted 1px;
   letter-spacing: 0em;
+}
+
+.spacer {
+  height: 1000px;
+  border: 1px dotted green;
 }
