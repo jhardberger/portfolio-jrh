@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Name from './Name/index';
+import Splash from './Splash/index';
 import Body from './Body/index';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -14,19 +14,24 @@ class App extends Component {
       showNav: false
     };
     this.handleShowNav = this.handleShowNav.bind(this);
+    this.handleHideNav = this.handleHideNav.bind(this);
   }
 
   handleShowNav(){
-    this.setState({ showNav: !this.state.showNav})
+    this.setState({ showNav: true})
+  }
+
+  handleHideNav(){
+    this.setState({ showNav: false})
   }
 
   render(){
     return (
       <div className='app'>
         <ParallaxProvider>
-          <Name handleShowNav={this.handleShowNav} />  
+          <Splash handleShowNav={this.handleShowNav} handleHideNav={this.handleHideNav} />  
         </ParallaxProvider>
-        <Body showNav = {this.state.showNav} />
+        <Body showNav={this.state.showNav} />
       </div>
     );
   }

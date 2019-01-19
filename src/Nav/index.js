@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-// import { Sticky } from 'react-sticky';
-
+import { Fade } from 'react-reveal';
 
 
 class Nav extends Component {
@@ -11,12 +10,17 @@ class Nav extends Component {
 
 		return(
 	
-			<div className='nav' style={style} >
-				<ul>
-					<li>nav bar tk</li>
-					<li>nav bar tk</li>
-				</ul>
-			</div>
+			<Fade top when={this.props.showNav}>
+				<div className='nav-bar' style={style} >
+						<div className='name'>
+							<h1>john hardberger</h1>
+						</div>
+						<ul className='nav'>
+							<li>nav bar tk</li>
+							<li>nav bar tk</li>
+						</ul>
+				</div>
+			</Fade>
 
 		)
 	}

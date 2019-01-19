@@ -5,13 +5,13 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 import Waypoint 		  from 'react-waypoint';
 
 
-const Name = (props) => {
+const Splash = (props) => {
 
 	const handleShowNav = props.handleShowNav.bind(this);
-
+	const handleHideNav = props.handleHideNav.bind(this);
 	return(
 		<div className='splash-page'>
-			<Fade big>
+			<Fade clear>
 				<ParallaxBanner
 					className='splash-parallax'
 					layers={[
@@ -33,9 +33,9 @@ const Name = (props) => {
 				</ParallaxBanner>
 			</Fade>
 
-			<Waypoint onLeave={handleShowNav} />
+			<Waypoint onLeave={handleShowNav} onEnter={handleHideNav} />
 
 		</div>
 	)
 }
-export default Name;
+export default Splash;
