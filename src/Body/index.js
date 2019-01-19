@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Nav           from '../Nav/index';
 import Bio           from '../Bio/index';
-import WorkContainer from '../WorkContainer/index';
+// import WorkContainer from '../WorkContainer/index';
 
-import { StickyContainer } from 'react-sticky';
+import { StickyContainer, Sticky } from 'react-sticky';
 import { Slide }           from 'react-reveal';
 
 class Body extends Component {
@@ -13,13 +13,19 @@ class Body extends Component {
 	}
 	render(){
 		return(
-			<StickyContainer className='body'>
-	            <Slide top when={this.props.showNav}>
-	            	<Nav />
-	            </Slide> 
+			<div className='body'>
+				<StickyContainer className='container'>
+		 			<Sticky>
+		 				{({style}) => (
+		 					<Nav style={style} />
+		 				)}
+		 			</Sticky>
 	            <Bio />
-          	</StickyContainer>
+	          	</StickyContainer>
+          	</div>
 		)
 	}
 }
+
 export default Body;
+

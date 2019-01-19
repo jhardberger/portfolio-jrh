@@ -13,10 +13,10 @@ class App extends Component {
     this.state = {
       showNav: false
     };
-    this.handleClickNav = this.handleClickNav.bind(this);
+    this.handleShowNav = this.handleShowNav.bind(this);
   }
 
-  handleClickNav(){
+  handleShowNav(){
     this.setState({ showNav: !this.state.showNav})
   }
 
@@ -24,9 +24,9 @@ class App extends Component {
     return (
       <div className='app'>
         <ParallaxProvider>
-          <Name handleClickNav={this.handleClickNav} />  
-          <Body showNav = {this.state.showNav} />
+          <Name handleShowNav={this.handleShowNav} />  
         </ParallaxProvider>
+        <Body showNav = {this.state.showNav} />
       </div>
     );
   }

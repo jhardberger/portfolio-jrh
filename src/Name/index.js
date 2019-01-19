@@ -7,7 +7,7 @@ import Waypoint 		  from 'react-waypoint';
 
 const Name = (props) => {
 
-	const handleClickNav = props.handleClickNav.bind(this);
+	const handleShowNav = props.handleShowNav.bind(this);
 
 	return(
 		<div className='splash-page'>
@@ -21,7 +21,6 @@ const Name = (props) => {
 						},{
 							image: '/iceland_002.png',
 							amount: 0.5,
-
 						},{
 							image: '/iceland_003.png',
 							amount: 0.1,
@@ -34,7 +33,7 @@ const Name = (props) => {
 				</ParallaxBanner>
 			</Fade>
 
-			<Waypoint onLeave={handleClickNav} />
+			<Waypoint onLeave={handleShowNav} />
 
 		</div>
 	)
