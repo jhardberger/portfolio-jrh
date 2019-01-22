@@ -46,6 +46,8 @@ h2 {
 .bio {
   padding-left: 30px;
   padding-right: 30px;
+  position: relative;
+  z-index: -2;
 }
 
 .drop-cap-graf:first-letter {
@@ -66,8 +68,6 @@ h2 {
   padding-bottom: 20px;
   padding-right: 20px;
   border: 1px dotted black;
-
-
 }
 
 .prof-pic-container {

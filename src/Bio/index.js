@@ -15,9 +15,11 @@ const Bio = () => {
 				<div className='prof-pic-container'>
 					<img src='/prof-pic.jpeg' className='prof-pic' />
 				</div>
-				<p className='paragraph-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus. Curabitur dui felis, fringilla quis libero non, ullamcorper semper mi. Aenean tempus, sem vitae ullamcorper convallis, ante ex cursus dolor, non feugiat nisi neque vitae ex. Quisque in blandit velit. Vestibulum justo leo, facilisis in aliquet at, blandit sit amet ligula. Aenean ut libero finibus, imperdiet lectus nec, feugiat magna. Suspendisse congue ligula in ultrices auctor. Suspendisse magna est, interdum id diam id, congue porta nulla. Suspendisse elementum metus ut libero egestas, sit amet fermentum nibh varius. Nulla turpis nunc, maximus eu metus ac, euismod varius nibh. Sed sit amet massa tincidunt, iaculis leo at, elementum sapien. Morbi quis sagittis leo.</p>
-			</div>
-			
+				<div className='paragraph-2'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus. Curabitur dui felis, fringilla quis libero non, ullamcorper semper mi. Aenean tempus, sem vitae ullamcorper convallis, ante ex cursus dolor, non feugiat nisi neque vitae ex. Quisque in blandit velit. Vestibulum justo leo, facilisis in aliquet at, blandit sit amet ligula. Aenean ut libero finibus, imperdiet lectus nec, feugiat magna. Suspendisse congue ligula in ultrices auctor. Suspendisse magna est, interdum id diam id, congue porta nulla. Suspendisse elementum metus ut libero egestas, sit amet fermentum nibh varius. Nulla turpis nunc, maximus eu metus ac, euismod varius nibh. Sed sit amet massa tincidunt, iaculis leo at, elementum sapien. Morbi quis sagittis leo.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.</p>
+				</div>
+			</div>		
 			<div className='spacer' >
 			</div>
 		</div>
