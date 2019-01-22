@@ -4,25 +4,39 @@ import React, { Component } from 'react';
 class WorkContainer extends Component {
 	render(){
 		return(
-			<div className="portfolio">
-				<ul>
-					<li className="project" id="project-1">
-						Project 1
-						<img src="/Users/john/salty-sardines/portfolio-mk2/portfolio/public/006.jpg" />
-					</li>
-					<li className="project" id="project-2">
-						Project 2
-						<img src="/Users/john/salty-sardines/portfolio-mk2/portfolio/public/008.jpg" />
-					</li>
-					<li className="project" id="project-3">
-						Project 3
-						<img src="/Users/john/salty-sardines/portfolio-mk2/portfolio/public/009.jpg" />
-					</li>
-					<li className="project" id="project-4">
-						Project 4
-						<img src="/Users/john/salty-sardines/portfolio-mk2/portfolio/public/011.jpg" />
-					</li>
-				</ul>
+			<div className="work-container">
+				<div className="project" id="project-1">
+					<img src='/prof-pic.jpeg' className='project-img' />
+					<div className='project-body'>
+						<h1>Project Title</h1>
+						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.
+						</p>
+					</div>
+				</div>
+				<div className="project" id="project-2">
+					<img src='/prof-pic.jpeg' className='project-img' />
+					<div className='project-body'>
+						<h1>Project Title</h1>
+						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.
+						</p>
+					</div>
+				</div>
+				<div className="project" id="project-3">
+					<img src='/prof-pic.jpeg' className='project-img' />
+					<div className='project-body'>
+						<h1>Project Title</h1>
+						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.
+						</p>
+					</div>
+				</div>
+				<div className="project" id="project-4">
+					<img src='/prof-pic.jpeg' className='project-img' />
+					<div className='project-body'>
+						<h1>Project Title</h1>
+						<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.
+						</p>
+					</div>
+				</div>
 			</div>
 		)
 	}

@@ -30,8 +30,8 @@ class App extends Component {
       <div className='app'>
         <ParallaxProvider>
           <Splash handleShowNav={this.handleShowNav} handleHideNav={this.handleHideNav} />  
+          <Body showNav={this.state.showNav} />
         </ParallaxProvider>
-        <Body showNav={this.state.showNav} />
       </div>
     );
   }

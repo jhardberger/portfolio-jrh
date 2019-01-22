@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Nav           from '../Nav/index';
 import Bio           from '../Bio/index';
-// import WorkContainer from '../WorkContainer/index';
+import WorkContainer from '../WorkContainer/index';
 
 import { StickyContainer, Sticky } from 'react-sticky';
 
@@ -14,13 +14,16 @@ class Body extends Component {
 	render(){
 		return(
 			<div className='body'>
-				<StickyContainer className='container'>
+				<StickyContainer>
 		 			<Sticky>
 		 				{({style}) => (
 		 					<Nav style={style} showNav={this.props.showNav} />
 		 				)}
 		 			</Sticky>
-	            <Bio />
+		 			<div className='content'>
+			            <Bio />
+			            <WorkContainer />
+		            </div>
 	          	</StickyContainer>
           	</div>
 		)
