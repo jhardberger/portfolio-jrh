@@ -107,16 +107,23 @@ h2 {
 }
 
 .project {
-  border: 1px dotted black;
-  display: flex;
-  width: 900px;
-  height: 300px;
-  margin: 40px;
+  display: inline-flex;
+  margin-bottom: 200px;
 }
 
 .project-img {
   height: 300px;
   width: 300px;
+
+}
+
+.project-body {
+  display: flex;
+  width: 900px;
+  height: 300px;
+  margin: 100px;
+  position: relative;
+  z-index: -3;
 }
 
 #project-1 {
