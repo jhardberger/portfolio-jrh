@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Scroll from '../Scroll/index';
+
 import { Fade }           from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Waypoint 		  from 'react-waypoint';
@@ -9,7 +11,7 @@ const Splash = (props) => {
 
 	const handleShowNav = props.handleShowNav.bind(this);
 	const handleHideNav = props.handleHideNav.bind(this);
-	
+
 	return(
 		<div className='splash-page'>
 			<Fade clear>
@@ -25,10 +27,14 @@ const Splash = (props) => {
 						},{
 							image: '/iceland_003.png',
 							amount: 0.1,
+						},{
+							image: '',
+							amount: 0,
+							children: <div className='scroll'><Scroll showScroll={props.showScroll} /></div>
 						}
 					]}
 					style={{
-						height: '700px'
+						height: '700px',
 					}}
 				>
 				</ParallaxBanner>
