@@ -13,7 +13,7 @@ class Nav extends Component {
 			<Fade top when={this.props.showNav}>
 				<div className='nav-bar' style={style} >
 						<div className='nav-name'>
-							<h1>JOHN HARDBERGER</h1>
+							<h1>john Hardberger</h1>
 						</div>
 						<ul className='nav'>
 							<li>nav bar tk</li>

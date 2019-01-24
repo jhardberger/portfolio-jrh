@@ -9,10 +9,6 @@ import Footer		 from '../Footer/index';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 class Body extends Component {
-	constructor(props){
-		super();
-	}
-
 	render(){
 		return(
 			<div className='body'>

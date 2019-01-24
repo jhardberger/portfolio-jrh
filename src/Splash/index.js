@@ -35,7 +35,7 @@ const Splash = (props) => {
 						},{
 							image: '',
 							amount: 0.9,
-							children: <NamePara />,
+							children: <NamePara showScroll={props.showScroll} />,
 						}
 					]}
 					style={{

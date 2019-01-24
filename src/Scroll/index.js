@@ -9,7 +9,7 @@ const Scroll = (props) => {
 
 	return(
 		<Fade bottom opposite when={showScroll}> 
-			<Icon size='massive' name='caret down' className='scroll-arrow' />			
+			<Icon size='huge' name='chevron down' className='scroll-arrow' />			
 		</Fade>
 	)
 }
