@@ -19,9 +19,13 @@ class Body extends Component {
 		 				)}
 		 			</Sticky>
 		 			<div className='content'>
+		 				<div className='spacer'></div>
 			            <Bio />
+			            <div className='big-spacer'></div>
 			            <WorkContainer />
+			            <div className='big-spacer'></div>
 			            <FunStuff />
+			            <div className='spacer'></div>
 		            </div>
 		        <Footer />
 	          	</StickyContainer>

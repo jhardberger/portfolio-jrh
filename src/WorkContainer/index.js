@@ -12,7 +12,7 @@ class WorkContainer extends Component {
 
 				<div className="project" id="project-1">
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-							<Fade botton opposite>
+							<Fade bottom opposite>
 								<img src='/prof-pic.jpeg' className='project-img' />
 							</Fade>
 						</Parallax>
@@ -30,7 +30,7 @@ class WorkContainer extends Component {
 				
 				<div className="project" id="project-2">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-						<Fade botton opposite>
+						<Fade bottom opposite>
 							<img src='/prof-pic.jpeg' className='project-img' />
 						</Fade>
 					</Parallax>
@@ -48,7 +48,7 @@ class WorkContainer extends Component {
 
 				<div className="project" id="project-3">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-						<Fade botton opposite>
+						<Fade bottom opposite>
 							<img src='/prof-pic.jpeg' className='project-img' />
 						</Fade>
 					</Parallax>
@@ -66,7 +66,7 @@ class WorkContainer extends Component {
 
 				<div className="project" id="project-4">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-						<Fade botton opposite>
+						<Fade bottom opposite>
 								<img src='/prof-pic.jpeg' className='project-img' />
 							</Fade>
 					</Parallax>
