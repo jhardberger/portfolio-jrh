@@ -21,7 +21,7 @@ h2 {
 
 .splash-page {
   position: relative;
-  z-index: 0;
+  z-index: 2;
 }
 
 /*nav container*/
@@ -31,7 +31,7 @@ h2 {
   justify-content: space-between; 
   background: black;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .nav {
@@ -52,16 +52,12 @@ h2 {
 
 .content {
   position: relative;
-  z-index: -2; 
+  z-index: 0; 
   padding-left: 30px;
   padding-right: 30px;
 }
 
 /*bio container*/
-
-.bio {
-
-}
 
 .drop-cap-graf:first-letter {
   color: black;
@@ -77,9 +73,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
   border: 1px dotted black;
 }
 
@@ -108,13 +104,14 @@ h2 {
 
 .project {
   display: inline-flex;
+  margin-top: 200px;
   margin-bottom: 200px;
+  border: 1px dotted orange;
 }
 
 .project-img {
   height: 300px;
   width: 300px;
-
 }
 
 .project-body {
@@ -122,24 +119,54 @@ h2 {
   width: 900px;
   height: 300px;
   margin: 100px;
-  position: relative;
-  z-index: -3;
 }
 
 #project-1 {
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 #project-2 {
-  margin-left: 150px; 
+  margin-left: 50px; 
 }
 
 #project-3 {
-  margin-right: 150px;
+  margin-right: 50px;
 }
 
 #project-4 {
-  margin-left: 200px;
+  margin-left: 100px;
+}
+
+/*fun stuff container*/
+
+.fun-container {
+  border: 1px dotted green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fun {
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+}
+
+.fun-thumb {
+  border: 1px dotted purple;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.info-box {
+  border: dotted 1px yellow;
+  width: 200px;
+  background: black;
+  color: white;
+  position: absolute;
+  z-index: 1;
 }
 
 /* temp/might not need later */
@@ -162,6 +189,6 @@ h2 {
 }
 
 .spacer {
-  height: 1000px;
+  height: 100px;
   border: 1px dotted green;
 }
