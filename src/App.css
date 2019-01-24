@@ -154,16 +154,15 @@ h2 {
 .fun-thumb {
   border: 1px dotted purple;
   display: block;
-  height: 100%;
-  width: 100%;
-  position: relative;
+  height: 200px;
+  width: 200px;
+  position: absolute;
   z-index: 0;
 }
 
 .info-box {
-  border: dotted 1px yellow;
   width: 200px;
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   position: absolute;
   z-index: 1;

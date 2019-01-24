@@ -31,7 +31,7 @@ class FunStuff extends Component {
 					<Fade right casscade>
 						<div className='fun'>
 							<img src='/prof-pic.jpeg' className='fun-thumb' name='show1' onMouseOver={this.handleShow} onMouseOut={this.handleHide} />
-							<Fade bottom when={this.state.show1}>
+							<Fade clear when={this.state.show1}>
 								<div className='info-box'> 
 									A fun description goes here
 								</div>
@@ -39,7 +39,7 @@ class FunStuff extends Component {
 						</div>
 						<div className='fun'>
 							<img src='/prof-pic.jpeg' className='fun-thumb' name='show2' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade bottom when={this.state.show2}>
+							<Fade clear when={this.state.show2}>
 								<div className='info-box'> 
 									A fun description goes here
 								</div>
@@ -47,7 +47,7 @@ class FunStuff extends Component {
 						</div>
 						<div className='fun'>
 							<img src='/prof-pic.jpeg' className='fun-thumb' name='show3' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade bottom when={this.state.show3}>
+							<Fade clear when={this.state.show3}>
 								<div className='info-box'> 
 									A fun description goes here
 								</div>
@@ -55,7 +55,7 @@ class FunStuff extends Component {
 						</div>
 						<div className='fun'>
 							<img src='/prof-pic.jpeg' className='fun-thumb' name='show4' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade bottom when={this.state.show4}>
+							<Fade clear when={this.state.show4}>
 								<div className='info-box'> 
 									A fun description goes here
 								</div>
