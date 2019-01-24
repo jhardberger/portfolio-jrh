@@ -3,6 +3,7 @@ import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
 
+
 const NamePara = () => { 
 	const makeName = () => {
 		const myName = 'JOHN HARDBERGER'.split('');
@@ -12,7 +13,7 @@ const NamePara = () => {
 			return(
 				<Parallax
 					key={i}
-					offsetXMin={100 * (i - 3)}
+					offsetXMax={120 * (i - 3)}
 				>
 					<div>
 						<h1 className='letter'>{letter}</h1>

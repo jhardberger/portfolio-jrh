@@ -6,7 +6,7 @@
 
 h1 {
   color: red;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
   font-size: 20px;
 }
 
@@ -52,6 +52,7 @@ a {
 .nav-bar {
   display: flex;
   justify-content: space-between; 
+  align-items: center;
   background: black;
   position: relative;
   z-index: 1;
@@ -64,10 +65,10 @@ a {
   width: 200px;
   display: flex;
   justify-content: space-between;
-  padding-right: 40px;
+  padding-right: 30px;
 }
 
-.name {
+.nav-name {
   padding-left: 40px;
 }
 
@@ -84,7 +85,7 @@ a {
 
 .drop-cap-graf:first-letter {
   color: black;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Major Mono Display', monospace;
   font-size: 50px;
   float: left;
   line-height: .9;
@@ -202,16 +203,15 @@ a {
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-copy {
   padding-left: 30px;
-  padding-top: 30px;
 }
 
 .icons {
   padding-right: 30px;
-  padding-top: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -223,20 +223,15 @@ a {
   position: relative;
   z-index: 1;
   height: 100%;
+  margin: 0;
+  padding-right: 150px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border: green dotted 4px;
-  padding-right: 40px;
 }
 
 .letter {
-  border: red dotted 1px;
+  color: white;
+  font-size: 50px;
   letter-spacing: 0em;
-}
-
-.spacer {
-  height: 100px;
-  border: 1px dotted green;
 }

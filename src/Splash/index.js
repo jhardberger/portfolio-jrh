@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Scroll from '../Scroll/index';
+import NamePara from '../NamePara/index';
 
 import { Fade }           from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
@@ -31,6 +32,10 @@ const Splash = (props) => {
 							image: '',
 							amount: 0,
 							children: <div className='scroll'><Scroll showScroll={props.showScroll} /></div>
+						},{
+							image: '',
+							amount: 0.9,
+							children: <NamePara />,
 						}
 					]}
 					style={{
