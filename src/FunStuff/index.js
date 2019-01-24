@@ -63,8 +63,6 @@ class FunStuff extends Component {
 						</div>
 					</Fade>
 				</div>
-				<div className='spacer'>
-				</div>
 			</div>
 		)
 	}

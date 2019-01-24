@@ -9,6 +9,7 @@ const Splash = (props) => {
 
 	const handleShowNav = props.handleShowNav.bind(this);
 	const handleHideNav = props.handleHideNav.bind(this);
+	
 	return(
 		<div className='splash-page'>
 			<Fade clear>

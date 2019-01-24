@@ -17,6 +17,11 @@ h2 {
   justify-content: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*splash container/parallax*/
 
 .splash-page {
@@ -142,7 +147,9 @@ h2 {
 .fun-container {
   border: 1px dotted green;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  padding-right: 60px;
 }
 
 .fun {
@@ -167,6 +174,30 @@ h2 {
   position: absolute;
   z-index: 1;
 }
+
+/*footer container*/
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.icons {
+  padding-right: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 /* temp/might not need later */
 
