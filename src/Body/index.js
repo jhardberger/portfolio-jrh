@@ -25,7 +25,7 @@ class Body extends Component {
 			            <WorkContainer />
 			            <div className='big-spacer'></div>
 			            <FunStuff />
-			            <div className='spacer'></div>
+			            <div className='big-spacer'></div>
 		            </div>
 		        <Footer />
 	          	</StickyContainer>

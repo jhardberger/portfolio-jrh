@@ -26,43 +26,41 @@ class FunStuff extends Component {
 	}
 	render(){
 		return(
-			<div className='fun-stuff'>
-				<div className='fun-container'>
-					<Fade right casscade>
-						<div className='fun'>
-							<img src='/prof-pic.jpeg' className='fun-thumb' name='show1' onMouseOver={this.handleShow} onMouseOut={this.handleHide} />
-							<Fade clear when={this.state.show1}>
-								<div className='info-box'> 
-									A fun description goes here
-								</div>
-							</Fade>
-						</div>
-						<div className='fun'>
-							<img src='/prof-pic.jpeg' className='fun-thumb' name='show2' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade clear when={this.state.show2}>
-								<div className='info-box'> 
-									A fun description goes here
-								</div>
-							</Fade>
-						</div>
-						<div className='fun'>
-							<img src='/prof-pic.jpeg' className='fun-thumb' name='show3' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade clear when={this.state.show3}>
-								<div className='info-box'> 
-									A fun description goes here
-								</div>
-							</Fade>
-						</div>
-						<div className='fun'>
-							<img src='/prof-pic.jpeg' className='fun-thumb' name='show4' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-							<Fade clear when={this.state.show4}>
-								<div className='info-box'> 
-									A fun description goes here
-								</div>
-							</Fade>
-						</div>
-					</Fade>
-				</div>
+			<div className='fun-container'>
+				<Fade right casscade>
+					<div className='fun'>
+						<img src='/prof-pic.jpeg' className='fun-thumb' name='show1' onMouseOver={this.handleShow} onMouseOut={this.handleHide} />
+						<Fade clear when={this.state.show1}>
+							<div className='info-box'> 
+								A fun description goes here
+							</div>
+						</Fade>
+					</div>
+					<div className='fun'>
+						<img src='/prof-pic.jpeg' className='fun-thumb' name='show2' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
+						<Fade clear when={this.state.show2}>
+							<div className='info-box'> 
+								A fun description goes here
+							</div>
+						</Fade>
+					</div>
+					<div className='fun'>
+						<img src='/prof-pic.jpeg' className='fun-thumb' name='show3' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
+						<Fade clear when={this.state.show3}>
+							<div className='info-box'> 
+								A fun description goes here
+							</div>
+						</Fade>
+					</div>
+					<div className='fun'>
+						<img src='/prof-pic.jpeg' className='fun-thumb' name='show4' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
+						<Fade clear when={this.state.show4}>
+							<div className='info-box'> 
+								A fun description goes here
+							</div>
+						</Fade>
+					</div>
+				</Fade>
 			</div>
 		)
 	}
