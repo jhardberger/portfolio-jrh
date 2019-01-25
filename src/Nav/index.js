@@ -16,8 +16,10 @@ class Nav extends Component {
 							<h1>john Hardberger</h1>
 						</div>
 						<ul className='nav'>
-							<li>nav bar tk</li>
-							<li>nav bar tk</li>
+							<li> dev </li>|
+							<li> art </li>|
+							<li> res </li>|
+							<li> con </li>
 						</ul>
 				</div>
 			</Fade>

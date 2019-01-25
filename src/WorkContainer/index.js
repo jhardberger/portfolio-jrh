@@ -9,11 +9,12 @@ class WorkContainer extends Component {
 		return(
 			<div className="work-container">
 
-
 				<div className="project" id="project-1">
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<Fade bottom opposite>
-								<img src='/prof-pic.jpeg' className='project-img' />
+								<div className='project-img-container'>
+									<img src='/prof-pic.jpeg' className='project-img' />
+								</div>
 							</Fade>
 						</Parallax>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
@@ -22,7 +23,7 @@ class WorkContainer extends Component {
 									<h1>Project Title</h1>
 									<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus.
 									</p>
-							</div>
+								</div>
 							</Fade>
 						</Parallax>
 				</div>
