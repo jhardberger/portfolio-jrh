@@ -7,12 +7,13 @@ const Bio = (props) => {
 	
 	return(
 		<div className='bio-container'>
-			<Fade clear cascade>
-				<div className='intro'>
+			<Waypoint onEnter={props.handleHideScroll} />  
+			<Fade clear cascade>					
+				<div className='intro'>	
 					<p className='drop-cap-graf'>Howdy! My name's John Hardberger. I'm writer, web developer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
+				<Waypoint onEnter={props.handleHideName} />	
 				</div>
 				<div className='bio'>
-					<Waypoint onEnter={props.handleHideName} />
 					<div className='prof-pic-container'>
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />
 					</div>

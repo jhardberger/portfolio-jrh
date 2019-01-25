@@ -52,10 +52,10 @@ class App extends Component {
             showScroll={this.state.showScroll} 
             showName={this.state.showName}
           />
-          <Waypoint onEnter={this.handleHideScroll} />  
           <Body 
             showNav={this.state.showNav}
 
+            handleHideScroll={this.handleHideScroll}
             handleHideName={this.handleHideName}
           />
         </ParallaxProvider>

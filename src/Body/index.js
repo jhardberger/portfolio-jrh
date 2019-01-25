@@ -7,6 +7,7 @@ import FunStuff		 from '../FunStuff/index';
 import Footer		 from '../Footer/index';
 
 import { StickyContainer, Sticky } from 'react-sticky';
+import { Fade } from 'react-reveal';
 import { Icon } from 'semantic-ui-react';
 
 class Body extends Component {
@@ -20,18 +21,19 @@ class Body extends Component {
 		 				)}
 		 			</Sticky>
 		 			<div className='content'>
-			            <Bio handleHideName={this.props.handleHideName} />
+			            <Bio handleHideName={this.props.handleHideName} handleHideScroll={this.props.handleHideScroll} />
 			            <div className='scroll-instruction'>
-							<h1>SCROLL for some recent work:</h1>
-							<Icon size='large' name='chevron down' className='scroll-arrow' />		
+			            	<Fade bottom opposite >
+			            		<h1>rECeNt wOrk</h1>
+								<Icon size='large' name='chevron down' className='scroll-arrow' />		
+							</Fade>
 						</div>	
 			            <WorkContainer />
 			            <div className='scroll-instruction'>
-							<h1>keep SCROLLING for some FUN STUFF</h1>
+							<h1>nOn-dEV StUfF</h1>
 							<Icon size='large' name='chevron down' className='scroll-arrow' />
 						</div>	
 			            <FunStuff />
-			            <div className='big-spacer'></div>
 		            </div>
 		        <Footer />
 	          	</StickyContainer>
