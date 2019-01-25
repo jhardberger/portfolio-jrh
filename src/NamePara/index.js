@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { Parallax } from 'react-scroll-parallax';
+import { Fade } 	from 'react-reveal';
 
-const NamePara = () => { 
+
+const NamePara = (props) => { 
+	const showName = props.showName;
+
 	const makeName = () => {
 		const myName = 'j H'.split('');
-		console.log(myName);
 		const letters = myName.map((letter, i) => {
-			console.log('say my name');
 			return(
 				<Parallax
 					key={i}
@@ -22,8 +24,10 @@ const NamePara = () => {
 		return letters;
 	}
 	return(
-		<div className='name-parallax'>
-			{makeName()}
+		<div className='name-parallax' >
+			<Fade bottom opposite when={showName}>
+				{makeName()}
+			</Fade>
 		</div>
 	)
 };

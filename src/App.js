@@ -13,13 +13,14 @@ class App extends Component {
     super();
     this.state = {
       showNav: false,
-      showScroll: true
+      showScroll: true,
+      showName: true
     };
 
-    this.handleShowNav = this.handleShowNav.bind(this);
-    this.handleHideNav = this.handleHideNav.bind(this);
-
+    this.handleShowNav    = this.handleShowNav.bind(this);
+    this.handleHideNav    = this.handleHideNav.bind(this);
     this.handleHideScroll = this.handleHideScroll.bind(this);
+    this.handleHideName   = this.handleHideName.bind(this);
 
   }
 
@@ -32,8 +33,12 @@ class App extends Component {
   }
 
   handleHideScroll(){
-    console.log('hide!');
     this.setState({ showScroll: false})
+  }
+
+  handleHideName(){
+    console.log('hide name');
+    this.setState({ showName: false})
   }
 
   render(){
@@ -43,11 +48,15 @@ class App extends Component {
           <Splash 
             handleShowNav={this.handleShowNav} 
             handleHideNav={this.handleHideNav}
+
             showScroll={this.state.showScroll} 
+            showName={this.state.showName}
           />
           <Waypoint onEnter={this.handleHideScroll} />  
           <Body 
-            showNav={this.state.showNav} 
+            showNav={this.state.showNav}
+
+            handleHideName={this.handleHideName}
           />
         </ParallaxProvider>
       </div>

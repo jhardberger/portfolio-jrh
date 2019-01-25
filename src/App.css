@@ -21,14 +21,11 @@ a {
   text-decoration: none;
 }
 
-.spacer {
-  height: 50px;
-  width: 100%;
-}
-
-.big-spacer {
-  height: 100px;
-  width: 100%;
+.scroll-instruction {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .scroll-arrow {
@@ -92,6 +89,10 @@ a {
 
 /*bio container*/
 
+.bio-container {
+  padding-top: 60px;
+}
+
 .drop-cap-graf:first-letter {
   color: black;
   font-family: 'Major Mono Display', monospace;
@@ -103,27 +104,26 @@ a {
 }
 
 .bio {
-  display: flex;
-  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
 }
 
+
+/*ADD MEDIA QUERRY TO CENTER PIC <-------- NOTE*/
+
+.prof-pic-container {
+  float: left;
+}
+
 .prof-pic {
   height: 300px;
   width: 300px;
+  padding: 15px;
 }
 
-.paragraph-2 {
+.bio-copy {
   text-align: left;
-}
-
-.recent-work {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*work container*/
@@ -174,13 +174,6 @@ a {
 
 #project-4 {
   margin-left: 120px;
-}
-
-.fun-stuff {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*fun stuff container*/
@@ -251,4 +244,14 @@ a {
 .letter {
   font-size: 90px;
   letter-spacing: 0em;
+}
+
+.spacer {
+  height: 50px;
+  width: 100%;
+}
+
+.big-spacer {
+  height: 100px;
+  width: 100%;
 }

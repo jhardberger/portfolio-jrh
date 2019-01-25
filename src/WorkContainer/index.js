@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { Icon } 	from 'semantic-ui-react';
 import { Parallax } from 'react-scroll-parallax';
 import { Fade } 	from 'react-reveal';
 
@@ -81,10 +80,7 @@ class WorkContainer extends Component {
 						</Fade>
 					</Parallax>
 				</div>
-				<div className='fun-stuff'>
-					<h1>keep SCROLLING for some FUN STUFF</h1>
-					<Icon size='large' name='chevron down' className='scroll-arrow' />
-				</div>	
+
 			</div>
 		)
 	}

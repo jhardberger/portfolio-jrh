@@ -1,29 +1,33 @@
 import React from 'react';
 
 import { Fade } from 'react-reveal';
-import { Icon } from 'semantic-ui-react';
+import Waypoint from 'react-waypoint';
 
-
-const Bio = () => {
+const Bio = (props) => {
+	
 	return(
 		<div className='bio-container'>
 			<Fade clear cascade>
 				<div className='intro'>
-					<p className='drop-cap-graf'>Howdy! My name's John Hardberger, and I'm writer, web developer, and all-around audio tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.
-					</p>
+					<p className='drop-cap-graf'>Howdy! My name's John Hardberger. I'm writer, web developer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
 				</div>
 				<div className='bio'>
+					<Waypoint onEnter={props.handleHideName} />
 					<div className='prof-pic-container'>
-						<img src='/prof-pic.jpeg' className='prof-pic' />
+						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />
 					</div>
-					<div className='paragraph-2'>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum volutpat risus, ac fringilla ligula vulputate eu. Vivamus nec velit non nibh lobortis dapibus nec nec velit. Sed aliquam aliquam maximus. Curabitur dui felis, fringilla quis libero non, ullamcorper semper mi. Aenean tempus, sem vitae ullamcorper convallis, ante ex cursus dolor, non feugiat nisi neque vitae ex. Quisque in blandit velit. Vestibulum justo leo, facilisis in aliquet at, blandit sit amet ligula. Aenean ut libero finibus, imperdiet lectus nec, feugiat magna. Suspendisse congue ligula in ultrices auctor. Suspendisse magna est, interdum id diam id, congue porta nulla. Suspendisse elementum metus ut libero egestas, sit amet fermentum nibh varius. Nulla turpis nunc, maximus eu metus ac, euismod varius nibh. Sed sit amet massa tincidunt, iaculis leo at, elementum sapien. Morbi quis sagittis leo.</p>
+					<div className='bio-copy'>
+						<p>Lorem ipsum dolor amet gentrify hammock lorem, ut vice enim labore occaecat copper mug four dollar toast banh mi plaid. Consectetur authentic id iceland ethical echo park kogi, asymmetrical et. Pug food truck coloring book, portland copper mug do disrupt photo booth blog. Chambray eiusmod locavore XOXO narwhal in.</p>
+
+						<p>Chartreuse lyft qui trust fund. Incididunt deep v vegan four loko before they sold out butcher sriracha fam keytar art party. Venmo taiyaki cillum intelligentsia, snackwave vexillologist bushwick pariatur banh mi actually. Tilde hell of +1, sustainable enim ea flannel microdosing eu fingerstache banh mi brooklyn.</p>
+
+						<p>YOLO reprehenderit neutra ex 8-bit heirloom, disrupt cronut flannel. Hella pug typewriter af, VHS adaptogen retro quis adipisicing et cupidatat intelligentsia. Poutine fingerstache consectetur organic, sustainable labore typewriter jean shorts activated charcoal single-origin coffee lo-fi ut plaid est eu. Aute do butcher incididunt dolore. Seitan fashion axe tbh shoreditch chia marfa food truck bicycle rights. Gluten-free leggings fugiat neutra eu nisi.</p>
+
+						<p>Oh. You need a little dummy text for your mockup? How quaint.</p>
+
+						<p>I bet you’re still using Bootstrap too…</p>
 					</div>
 				</div>
-				<div className='recent-work'>
-					<h1>SCROLL for some recent work:</h1>
-					<Icon size='large' name='chevron down' className='scroll-arrow' />			
-				</div>	
 			</Fade>
 		</div>
 	)
