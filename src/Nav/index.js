@@ -15,7 +15,7 @@ class Nav extends Component {
 		return(
 			<div className='nav-bar' style={style} >
 				<div className='nav-name'>
-					<h1>john Hardberger</h1>
+					<h1>john hardberger</h1>
 				</div>
 				<ul className='nav'>
 					<li><a href=''> hi </a></li>

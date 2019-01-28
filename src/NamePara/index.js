@@ -8,7 +8,7 @@ const NamePara = (props) => {
 	const showName = props.showName;
 
 	const makeName = () => {
-		const myName = 'j H'.split('');
+		const myName = 'j h'.split('');
 		const letters = myName.map((letter, i) => {
 			return(
 				<Parallax

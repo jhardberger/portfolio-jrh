@@ -15,27 +15,35 @@ class Body extends Component {
 		return(
 			<div className='body'>
 				<StickyContainer>
+
 		 			<Sticky>
 		 				{({style}) => (
 		 					<Nav style={style} handleModal={this.props.handleModal} handleResume={this.props.handleResume} />
 		 				)}
 		 			</Sticky>
+
 		 			<div className='content'>
+			            
 			            <Bio handleHideName={this.props.handleHideName} handleHideScroll={this.props.handleHideScroll} />
+			            
 			            <div className='scroll-instruction'>
 			            	<Fade bottom opposite>
 			            		<h1>rECeNt wOrk</h1>
 								<Icon size='large' name='chevron down' className='scroll-arrow' />		
 							</Fade>
 						</div>	
+			            
 			            <WorkContainer />
+			            
 			            <div className='scroll-instruction'>
 			            	<Fade bottom opposite>
 								<h1>nOn-dEV StUfF</h1>
 								<Icon size='large' name='chevron down' className='scroll-arrow' />
 							</Fade>
 						</div>	
+			            
 			            <FunStuff />
+			            
 		            </div>
 		        <Footer />
 	          	</StickyContainer>

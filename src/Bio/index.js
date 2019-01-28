@@ -10,7 +10,7 @@ const Bio = (props) => {
 			<Waypoint onEnter={props.handleHideScroll} />  
 			<Fade clear cascade>					
 				<div className='intro'>	
-					<p className='drop-cap-graf'>Howdy! My name's John Hardberger. I'm writer, web developer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
+					<p className='drop-cap-graf'>howdy! My name's John Hardberger. I'm writer, web developer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
 				<Waypoint onEnter={props.handleHideName} />	
 				</div>
 				<div className='bio'>
