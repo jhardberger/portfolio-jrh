@@ -8,8 +8,9 @@ import { List } from 'semantic-ui-react';
 class Nav extends Component {
 
 	render(){
-		const style  = this.props.style;
-		const handleModal = this.props.handleModal;
+		const style  	   = this.props.style;
+		const handleModal  = this.props.handleModal;
+		const handleResume = this.props.handleResume;
 
 		return(
 			<div className='nav-bar' style={style} >
@@ -20,7 +21,7 @@ class Nav extends Component {
 					<li><a href=''> hi </a></li>
 					<li><a href=''> work </a></li>
 					<li><a href=''> play </a></li>
-					<li><a href=''> resume </a></li>
+					<li onClick={handleResume}><a href='javascript:;'> resume </a></li>
 					<li onClick={handleModal}><a href='javascript:;'> contact </a></li>
 				</ul>
 			</div>

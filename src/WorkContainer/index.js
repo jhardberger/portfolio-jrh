@@ -27,7 +27,6 @@ class WorkContainer extends Component {
 							</Fade>
 						</Parallax>
 				</div>
-
 				
 				<div className="project" id="project-2">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
@@ -46,7 +45,6 @@ class WorkContainer extends Component {
 					</Parallax>
 				</div>
 
-
 				<div className="project" id="project-3">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 						<Fade bottom opposite>
@@ -64,7 +62,6 @@ class WorkContainer extends Component {
 					</Parallax>
 				</div>
 
-
 				<div className="project" id="project-4">
 					<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 						<Fade bottom opposite>
@@ -81,7 +78,7 @@ class WorkContainer extends Component {
 						</Fade>
 					</Parallax>
 				</div>
-
+				
 			</div>
 		)
 	}
