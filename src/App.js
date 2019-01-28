@@ -13,16 +13,16 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      showNav: false,
       showScroll: true,
       showName: true,
+      showNav: false,
       showModal: false
     };
 
-    this.handleShowNav    = this.handleShowNav.bind(this);
-    this.handleHideNav    = this.handleHideNav.bind(this);
     this.handleHideScroll = this.handleHideScroll.bind(this);
     this.handleHideName   = this.handleHideName.bind(this);
+    this.handleShowNav    = this.handleShowNav.bind(this);
+    this.handleHideNav    = this.handleHideNav.bind(this);
     this.handleModal      = this.handleModal.bind(this);
 
   }

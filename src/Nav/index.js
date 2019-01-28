@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import { Fade } from 'react-reveal';
+import { List } from 'semantic-ui-react';
+
 
 
 class Nav extends Component {
@@ -13,15 +15,16 @@ class Nav extends Component {
 	
 			<Fade top when={this.props.showNav}>
 				<div className='nav-bar' style={style} >
-						<div className='nav-name'>
-							<h1>john Hardberger</h1>
-						</div>
-						<ul className='nav'>
-							<li> dev </li>|
-							<li> art </li>|
-							<li> res </li>|
-							<li onClick={handleModal}> contact </li>
-						</ul>
+					<div className='nav-name'>
+						<h1>john Hardberger</h1>
+					</div>
+					<List inverted horizontal className='nav'>
+						<List.Item><a className='red' href=''> hi </a></List.Item>
+						<List.Item><a className='red' href=''> dev </a></List.Item>
+						<List.Item><a className='red' href=''> non-dev </a></List.Item>
+						<List.Item><a className='red' href=''> resume </a></List.Item>
+						<List.Item onClick={handleModal}><a className='red' href='javascript:;'> contact </a></List.Item>
+					</List>
 				</div>
 			</Fade>
 
