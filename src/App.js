@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Splash from './Splash/index';
 import Body from './Body/index';
+import ContactModal from './ContactModal/index';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Waypoint             from 'react-waypoint';
@@ -14,13 +15,15 @@ class App extends Component {
     this.state = {
       showNav: false,
       showScroll: true,
-      showName: true
+      showName: true,
+      showModal: false
     };
 
     this.handleShowNav    = this.handleShowNav.bind(this);
     this.handleHideNav    = this.handleHideNav.bind(this);
     this.handleHideScroll = this.handleHideScroll.bind(this);
     this.handleHideName   = this.handleHideName.bind(this);
+    this.handleModal      = this.handleModal.bind(this);
 
   }
 
@@ -41,6 +44,10 @@ class App extends Component {
     this.setState({ showName: false})
   }
 
+  handleModal(){
+    this.setState({ showModal: !this.state.showModal })
+  }
+
   render(){
     return (
       <div className='app'>
@@ -48,15 +55,22 @@ class App extends Component {
           <Splash 
             handleShowNav={this.handleShowNav} 
             handleHideNav={this.handleHideNav}
+            handleModal={this.handleModal}
 
             showScroll={this.state.showScroll} 
             showName={this.state.showName}
           />
           <Body 
-            showNav={this.state.showNav}
-
             handleHideScroll={this.handleHideScroll}
             handleHideName={this.handleHideName}
+            handleModal={this.handleModal}
+
+            showNav={this.state.showNav}
+          />
+          <ContactModal 
+            handleModal={this.handleModal} 
+          
+            showModal={this.state.showModal} 
           />
         </ParallaxProvider>
       </div>

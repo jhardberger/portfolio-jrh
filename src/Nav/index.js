@@ -7,6 +7,7 @@ class Nav extends Component {
 
 	render(){
 		const style  = this.props.style;
+		const handleModal = this.props.handleModal;
 
 		return(
 	
@@ -19,7 +20,7 @@ class Nav extends Component {
 							<li> dev </li>|
 							<li> art </li>|
 							<li> res </li>|
-							<li> con </li>
+							<li onClick={handleModal}> contact </li>
 						</ul>
 				</div>
 			</Fade>
