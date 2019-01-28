@@ -13,26 +13,20 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+      loaded: false,
       showScroll: true,
       showName: true,
-      showNav: false,
       showModal: false
     };
 
-    this.handleHideScroll = this.handleHideScroll.bind(this);
-    this.handleHideName   = this.handleHideName.bind(this);
-    this.handleShowNav    = this.handleShowNav.bind(this);
-    this.handleHideNav    = this.handleHideNav.bind(this);
-    this.handleModal      = this.handleModal.bind(this);
+    this.handleHideScroll   = this.handleHideScroll.bind(this);
+    this.handleHideName     = this.handleHideName.bind(this);
+    this.handleModal        = this.handleModal.bind(this);
 
   }
 
-  handleShowNav(){
-    this.setState({ showNav: true})
-  }
-
-  handleHideNav(){
-    this.setState({ showNav: false})
+  handleLoad(){
+    this.setState({ loaded: true });
   }
 
   handleHideScroll(){
@@ -48,15 +42,23 @@ class App extends Component {
     this.setState({ showModal: !this.state.showModal })
   }
 
+  componentDidMount(){
+    this.handleLoad();
+  }
+
   render(){
     return (
       <div className='app'>
         <ParallaxProvider>
+          <ContactModal 
+            handleModal={this.handleModal} 
+          
+            showModal={this.state.showModal} 
+          />
           <Splash 
-            handleShowNav={this.handleShowNav} 
-            handleHideNav={this.handleHideNav}
             handleModal={this.handleModal}
 
+            loaded={this.state.loaded}
             showScroll={this.state.showScroll} 
             showName={this.state.showName}
           />
@@ -64,13 +66,6 @@ class App extends Component {
             handleHideScroll={this.handleHideScroll}
             handleHideName={this.handleHideName}
             handleModal={this.handleModal}
-
-            showNav={this.state.showNav}
-          />
-          <ContactModal 
-            handleModal={this.handleModal} 
-          
-            showModal={this.state.showModal} 
           />
         </ParallaxProvider>
       </div>

@@ -17,7 +17,7 @@ class Body extends Component {
 				<StickyContainer>
 		 			<Sticky>
 		 				{({style}) => (
-		 					<Nav style={style} showNav={this.props.showNav} handleModal={this.props.handleModal} />
+		 					<Nav style={style} handleModal={this.props.handleModal} />
 		 				)}
 		 			</Sticky>
 		 			<div className='content'>

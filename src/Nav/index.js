@@ -12,22 +12,18 @@ class Nav extends Component {
 		const handleModal = this.props.handleModal;
 
 		return(
-	
-			<Fade top when={this.props.showNav}>
-				<div className='nav-bar' style={style} >
-					<div className='nav-name'>
-						<h1>john Hardberger</h1>
-					</div>
-					<ul className='nav'>
-						<li><a href=''> hi </a></li>
-						<li><a href=''> work </a></li>
-						<li><a href=''> play </a></li>
-						<li><a href=''> resume </a></li>
-						<li onClick={handleModal}><a href='javascript:;'> contact </a></li>
-					</ul>
+			<div className='nav-bar' style={style} >
+				<div className='nav-name'>
+					<h1>john Hardberger</h1>
 				</div>
-			</Fade>
-
+				<ul className='nav'>
+					<li><a href=''> hi </a></li>
+					<li><a href=''> work </a></li>
+					<li><a href=''> play </a></li>
+					<li><a href=''> resume </a></li>
+					<li onClick={handleModal}><a href='javascript:;'> contact </a></li>
+				</ul>
+			</div>
 		)
 	}
 }

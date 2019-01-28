@@ -127,8 +127,7 @@ a:hover {
   justify-content: space-around;
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
-  font-color: white;
-  text-decoration: none;
+  color: white;
 }
 
 .nav > li {

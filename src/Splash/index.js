@@ -10,12 +10,9 @@ import Waypoint 		  from 'react-waypoint';
 
 const Splash = (props) => {
 
-	const handleShowNav = props.handleShowNav.bind(this);
-	const handleHideNav = props.handleHideNav.bind(this);
-
 	return(
-		<div className='splash-page'>
-			<Fade clear>
+		<div className='splash-page' >
+			<Fade clear when={props.loaded} >
 				<ParallaxBanner
 					className='splash-parallax'
 					layers={[
@@ -27,10 +24,10 @@ const Splash = (props) => {
 							amount: 0.5,
 						},{
 							image: '/iceland_003.png',
-							amount: 0.1,
+							amount: 0.2,
 						},{
 							image: '',
-							amount: 0,
+							amount: 0.1,
 							children: <div className='scroll'><Scroll showScroll={props.showScroll} /></div>
 						},{
 							image: '',
@@ -44,9 +41,6 @@ const Splash = (props) => {
 				>
 				</ParallaxBanner>
 			</Fade>
-
-			<Waypoint onLeave={handleShowNav} onEnter={handleHideNav} />
-
 		</div>
 	)
 }
