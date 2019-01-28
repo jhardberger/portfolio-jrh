@@ -18,13 +18,13 @@ class Nav extends Component {
 					<div className='nav-name'>
 						<h1>john Hardberger</h1>
 					</div>
-					<List inverted horizontal className='nav'>
-						<List.Item><a className='red' href=''> hi </a></List.Item>
-						<List.Item><a className='red' href=''> dev </a></List.Item>
-						<List.Item><a className='red' href=''> non-dev </a></List.Item>
-						<List.Item><a className='red' href=''> resume </a></List.Item>
-						<List.Item onClick={handleModal}><a className='red' href='javascript:;'> contact </a></List.Item>
-					</List>
+					<ul className='nav'>
+						<li><a href=''> hi </a></li>
+						<li><a href=''> work </a></li>
+						<li><a href=''> play </a></li>
+						<li><a href=''> resume </a></li>
+						<li onClick={handleModal}><a href='javascript:;'> contact </a></li>
+					</ul>
 				</div>
 			</Fade>
 
@@ -32,4 +32,3 @@ class Nav extends Component {
 	}
 }
 export default Nav;
-

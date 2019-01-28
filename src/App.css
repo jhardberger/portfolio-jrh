@@ -122,16 +122,19 @@ a:hover {
 }
 
 .nav {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
-}
-
-.nav > div {
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
   font-color: white;
   text-decoration: none;
 }
+
+.nav > li {
+  padding-left: 10px;
+}
+
 
 /*body sans splash container*/
 

@@ -5,7 +5,7 @@ import { Icon, Header, Modal } from 'semantic-ui-react';
 const ContactModal = (props) => {
 	return(
 		<div className='contact'>
-			<Modal open={props.showModal} >
+			<Modal open={props.showModal} dimmer='blurring' >
 				<Modal.Header><h1 className='modal-header'>drOp mE a LinE</h1></Modal.Header>
 				<Modal.Content>
 					<div className='modal-content'>
