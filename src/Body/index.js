@@ -28,7 +28,7 @@ class Body extends Component {
 			            
 			            <div className='scroll-instruction'>
 			            	<Fade bottom opposite>
-			            		<h1>rECeNt wOrk</h1>
+			            		<h1>recent work</h1>
 								<Icon size='large' name='chevron down' className='scroll-arrow' />		
 							</Fade>
 						</div>	
@@ -37,7 +37,7 @@ class Body extends Component {
 			            
 			            <div className='scroll-instruction'>
 			            	<Fade bottom opposite>
-								<h1>nOn-dEV StUfF</h1>
+								<h1>non-dev work</h1>
 								<Icon size='large' name='chevron down' className='scroll-arrow' />
 							</Fade>
 						</div>	

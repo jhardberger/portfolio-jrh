@@ -237,6 +237,25 @@ a:hover {
   width: 600px;
 }
 
+.project-head {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.demo-arrow {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: tomato;
+}
+
+.demo {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 20px;
+  padding-top: 4px;
+}
+
 #project-1 {
   margin-right: 120px;
 }
