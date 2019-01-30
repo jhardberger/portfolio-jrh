@@ -6,7 +6,7 @@ const ResumeModal = (props) => {
 	return(
 		<div className='resume'>
 			<Modal open={props.showResume} dimmer='blurring'>
-				<Modal.Header><h1>réSumÉ</h1></Modal.Header>
+				<Modal.Header><h1>résumé</h1></Modal.Header>
 				<Modal.Content>
 					<a href='javascript:;'><Icon name='remove' onClick={props.handleResume}/></a>	
 				</Modal.Content>

@@ -6,7 +6,7 @@ const ContactModal = (props) => {
 	return(
 		<div className='contact'>
 			<Modal open={props.showModal} dimmer='blurring' >
-				<Modal.Header><h1 className='modal-header'>drOp mE a LinE</h1></Modal.Header>
+				<Modal.Header><h1 className='modal-header'>drop me a line</h1></Modal.Header>
 				<Modal.Content>
 					<div className='modal-content'>
 						<p>Got a weird question? Looking for a new friend? Want a cool website like this one?</p>
