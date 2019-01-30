@@ -18,15 +18,10 @@ const Bio = (props) => {
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />
 					</div>
 					<div className='bio-copy'>
-						<p></p>
+						<p>I've always enjoyed making things and have spent a good chunk of my adult life exploring different genres of thing to make, learning the necessary tools in the process. That passion for creation has been the driving force behind much of my personal growth. It lead me to the my three year editorial career, where I was lucky enough to write, report, fact-check, and edit stories for such stellar publications as Chicago magazine, Food Network magazine, the Chicago Tribune, and ApartmentTherapy.com. It lead me to many stints and side-gigs, in everything from DJing to graphic design.</p>
 
-						<p>Chartreuse lyft qui trust fund. Incididunt deep v vegan four loko before they sold out butcher sriracha fam keytar art party. Venmo taiyaki cillum intelligentsia, snackwave vexillologist bushwick pariatur banh mi actually. Tilde hell of +1, sustainable enim ea flannel microdosing eu fingerstache banh mi brooklyn.</p>
-
-						<p>YOLO reprehenderit neutra ex 8-bit heirloom, disrupt cronut flannel. Hella pug typewriter af, VHS adaptogen retro quis adipisicing et cupidatat intelligentsia. Poutine fingerstache consectetur organic, sustainable labore typewriter jean shorts activated charcoal single-origin coffee lo-fi ut plaid est eu. Aute do butcher incididunt dolore. Seitan fashion axe tbh shoreditch chia marfa food truck bicycle rights. Gluten-free leggings fugiat neutra eu nisi.</p>
-
-						<p>Oh. You need a little dummy text for your mockup? How quaint.</p>
-
-						<p>I bet you’re still using Bootstrap too…</p>
+						<p>							
+						</p>
 					</div>
 				</div>
 			</Fade>
