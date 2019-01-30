@@ -38,8 +38,7 @@ a:hover {
 }
 
 .scroll-instruction {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +52,11 @@ a:hover {
   width: 120px;
   display: flex;
   justify-content: space-around;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
 /*contact modal*/
@@ -140,7 +144,6 @@ a:hover {
   padding-left: 10px;
 }
 
-
 /*body sans splash container*/
 
 .content {
@@ -181,7 +184,6 @@ a:hover {
   padding-right: 30px;
 }
 
-
 /*ADD MEDIA QUERRY TO CENTER PIC <-------- NOTE*/
 
 .prof-pic-container {
@@ -215,12 +217,9 @@ a:hover {
   width: 840px;
   margin-top: 200px;
   margin-bottom: 200px;
-  padding-left: 90px;
-  background: gainsboro;
-}
-
-.project-img-container{
-  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-bottom: 120px;
+  background-color: gainsboro;
 }
 
 .project-img {
@@ -234,8 +233,8 @@ a:hover {
   flex-direction: column;
   justify-content: left;
   align-content: left;
+  padding-right: 60px;
   width: 600px;
-  height: 300px;
 }
 
 #project-1 {

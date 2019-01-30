@@ -23,8 +23,8 @@ class App extends Component {
 
     this.handleHideScroll = this.handleHideScroll.bind(this);
     this.handleHideName   = this.handleHideName.bind(this);
-    this.handleModal      = this.handleModal.bind(this);
     this.handleResume     = this.handleResume.bind(this); 
+    this.handleModal      = this.handleModal.bind(this);
 
   }
 

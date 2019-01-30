@@ -10,7 +10,7 @@ const Bio = (props) => {
 			<Waypoint onEnter={props.handleHideScroll} />  
 			<Fade clear cascade>					
 				<div className='intro'>	
-					<p className='drop-cap-graf'>howdy! My name's John Hardberger. I'm writer, web developer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
+					<p className='drop-cap-graf'>howdy! My name's John Hardberger. I'm writer, web developer, audio producer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA.</p>
 				<Waypoint onEnter={props.handleHideName} />	
 				</div>
 				<div className='bio'>
@@ -18,7 +18,7 @@ const Bio = (props) => {
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />
 					</div>
 					<div className='bio-copy'>
-						<p>Lorem ipsum dolor amet gentrify hammock lorem, ut vice enim labore occaecat copper mug four dollar toast banh mi plaid. Consectetur authentic id iceland ethical echo park kogi, asymmetrical et. Pug food truck coloring book, portland copper mug do disrupt photo booth blog. Chambray eiusmod locavore XOXO narwhal in.</p>
+						<p></p>
 
 						<p>Chartreuse lyft qui trust fund. Incididunt deep v vegan four loko before they sold out butcher sriracha fam keytar art party. Venmo taiyaki cillum intelligentsia, snackwave vexillologist bushwick pariatur banh mi actually. Tilde hell of +1, sustainable enim ea flannel microdosing eu fingerstache banh mi brooklyn.</p>
 
