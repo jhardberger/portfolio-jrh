@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { Fade } 		 from 'react-reveal';
-import { Image, Reveal } from 'semantic-ui-react'
+import { Image, Reveal } from 'semantic-ui-react';
+import ScrollableAnchor  from 'react-scrollable-anchor';
+
 
 const FunStuff = () => {
 	function content(text) {
@@ -15,51 +17,53 @@ const FunStuff = () => {
 	}
 
 	return(
-		<div className='fun-container'>
-			<Fade right cascade>
-				<div className='fun'>
-					<Reveal animated='small fade'>
-						<Reveal.Content visible >
-							<Image src='/prof-pic.jpeg' className='fun-thumb' />
-						</Reveal.Content>
-						<Reveal.Content hidden children={content('selected writing')} className='fun-content'>
-						</Reveal.Content>
-					</Reveal>
-				</div>	
+		<ScrollableAnchor id={'play'} >
+			<div className='fun-container'>
+				<Fade right cascade>
+					<div className='fun'>
+						<Reveal animated='small fade'>
+							<Reveal.Content visible >
+								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+							</Reveal.Content>
+							<Reveal.Content hidden children={content('selected writing')} className='fun-content'>
+							</Reveal.Content>
+						</Reveal>
+					</div>	
 
 
-				<div className='fun'>
-					<Reveal animated='small fade'>
-						<Reveal.Content visible >
-							<Image src='/prof-pic.jpeg' className='fun-thumb' />
-						</Reveal.Content>
-						<Reveal.Content hidden children={content('photo gallery')} className='fun-content'>
-						</Reveal.Content>
-					</Reveal>
-				</div>	
+					<div className='fun'>
+						<Reveal animated='small fade'>
+							<Reveal.Content visible >
+								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+							</Reveal.Content>
+							<Reveal.Content hidden children={content('photo gallery')} className='fun-content'>
+							</Reveal.Content>
+						</Reveal>
+					</div>	
 
-				<div className='fun'>
-					<Reveal animated='small fade'>
-						<Reveal.Content visible >
-							<Image src='/prof-pic.jpeg' className='fun-thumb' />
-						</Reveal.Content>
-						<Reveal.Content hidden children={content('doodles')} className='fun-content'>
-						</Reveal.Content>
-					</Reveal>
-				</div>
+					<div className='fun'>
+						<Reveal animated='small fade'>
+							<Reveal.Content visible >
+								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+							</Reveal.Content>
+							<Reveal.Content hidden children={content('doodles')} className='fun-content'>
+							</Reveal.Content>
+						</Reveal>
+					</div>
 
-				<div className='fun'>
-					<Reveal animated='small fade'>
-						<Reveal.Content visible >
-							<Image src='/prof-pic.jpeg' className='fun-thumb' />
-						</Reveal.Content>
-						<Reveal.Content hidden children={content('a/v')} className='fun-content'>
-						</Reveal.Content>
-					</Reveal>
-				</div>
+					<div className='fun'>
+						<Reveal animated='small fade'>
+							<Reveal.Content visible >
+								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+							</Reveal.Content>
+							<Reveal.Content hidden children={content('a/v')} className='fun-content'>
+							</Reveal.Content>
+						</Reveal>
+					</div>
 
-			</Fade>
-		</div>
+				</Fade>
+			</div>
+		</ScrollableAnchor>
 	)
 }
 export default FunStuff;

@@ -6,11 +6,9 @@ import WorkContainer from '../WorkContainer/index';
 import FunStuff		 from '../FunStuff/index';
 import Footer		 from '../Footer/index';
 
-import { StickyContainer, Sticky } from 'react-sticky';
-import { Fade } 				   from 'react-reveal';
-import { Icon } 				   from 'semantic-ui-react';
-
-import ScrollableAnchor 		   from 'react-scrollable-anchor'
+import { StickyContainer, Sticky }  from 'react-sticky';
+import { Fade } 					from 'react-reveal';
+import { Icon } 					from 'semantic-ui-react';
 
 
 class Body extends Component {
@@ -30,32 +28,35 @@ class Body extends Component {
 		 			</Sticky>
 
 		 			<div className='content'>
-			            <ScrollableAnchor id={'hi'}>
-				            <Bio 
-				            	handleHideName={this.props.handleHideName} 
-				            	handleHideScroll={this.props.handleHideScroll} 
-				            	handleModal={this.props.handleModal} 
-				            />
-			            </ScrollableAnchor>
 			            
-			            <div className='scroll-instruction'>
-			            	<Fade bottom opposite>
-			            		<h1>recent work</h1>
-								<Icon size='large' name='chevron down' className='scroll-arrow' />		
-							</Fade>
-						</div>	
+			            <Bio 
+			            	handleHideName={this.props.handleHideName} 
+			            	handleHideScroll={this.props.handleHideScroll} 
+			            	handleModal={this.props.handleModal} 
+			            />
+			            
+			            <a href='#work'>
+				            <div className='scroll-instruction'>
+				            	<Fade bottom opposite>
+					            		<h1>recent work</h1>
+										<Icon size='large' name='chevron down' className='scroll-arrow' />		
+								</Fade>
+							</div>	
+						</a>
 			            
 			            <WorkContainer />
 			            
-			            <div className='scroll-instruction'>
-			            	<Fade bottom opposite>
-								<h1>non-dev work</h1>
-								<Icon size='large' name='chevron down' className='scroll-arrow' />
-							</Fade>
-						</div>	
-			            <ScrollableAnchor id={'play'}>	
-			           		<FunStuff />
-			            </ScrollableAnchor>
+			            <a href='#play'>
+				            <div className='scroll-instruction'>
+				            	<Fade bottom opposite>
+									<h1>non-dev work</h1>
+									<Icon size='large' name='chevron down' className='scroll-arrow' />
+								</Fade>
+							</div>	
+			            </a>
+			            
+			            <FunStuff />
+			            
 		            </div>
 		        <Footer />
 	          	</StickyContainer>

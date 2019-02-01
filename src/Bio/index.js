@@ -2,19 +2,23 @@ import React from 'react';
 
 import Skills from '../Skills/index';
 
-import Waypoint from 'react-waypoint';
-import { Fade } from 'react-reveal';
+import Waypoint 		from 'react-waypoint';
+import { Fade } 		from 'react-reveal';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 const Bio = (props) => {
 	
 	return(
 		<div className='bio-container'>
 			<Waypoint onEnter={props.handleHideScroll} />  
-			<Fade clear cascade>					
-				<div className='intro'>	
-					<p className='drop-cap-graf'>howdy! My name's John Hardberger. I'm writer, web developer, audio producer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA. My primary mode of transportation is bycicle. I'm probably listening to music right now. I appreciate a good hot dog.</p>
+			<Fade clear cascade>
+				<ScrollableAnchor id={'hi'}	>				
+					<div className='intro'>	
+						<p className='drop-cap-graf'>howdy! My name's John Hardberger. I'm writer, web developer, audio producer, and all-around tinkerer. I'm originally from Texas, but for the last seven years I've hung my hat in Chicagoland, USA. My primary mode of transportation is bycicle. I'm probably listening to music right now. I appreciate a good hot dog.</p>
+					</div>
+				</ScrollableAnchor>
 				<Waypoint onEnter={props.handleHideName} />	
-				</div>
 				<div className='bio'>
 					<div className='prof-pic-container'>
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />

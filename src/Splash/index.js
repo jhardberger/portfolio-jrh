@@ -10,6 +10,7 @@ const Splash = (props) => {
 
 	return(
 		<div className='splash-page' >
+			<a href='#hi'>
 			<Fade clear when={props.loaded} >
 				<ParallaxBanner
 					className='splash-parallax'
@@ -39,6 +40,7 @@ const Splash = (props) => {
 				>
 				</ParallaxBanner>
 			</Fade>
+			</a>
 		</div>
 	)
 }
