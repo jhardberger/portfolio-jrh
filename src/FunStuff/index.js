@@ -1,68 +1,65 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Fade } from 'react-reveal';
+import { Fade } 		 from 'react-reveal';
+import { Image, Reveal } from 'semantic-ui-react'
 
-class FunStuff extends Component {
-	constructor(){
-		super();
-		this.state = {
-			show1: false,
-			show2: false,
-			show3: false,
-			show4: false, 
-		}
-	}
-	handleShow = (e) => {
-		console.log(e.currentTarget.attributes.name.value, 'in');
-		this.setState({
-			[e.currentTarget.attributes.name.value]: true
-		})
-	}
-	handleHide = (e) => {
-		console.log(e.currentTarget.attributes.name.value, 'out');
-		this.setState({
-			[e.currentTarget.attributes.name.value]: false
-		})	
-	}
-	render(){
+const FunStuff = () => {
+	function content(text) {
 		return(
-			<div className='fun-container'>
-				<Fade right casscade>
-					<div className='fun'>
-						<img src='/prof-pic.jpeg' className='fun-thumb' name='show1' onMouseOver={this.handleShow} onMouseOut={this.handleHide} />
-						<Fade clear when={this.state.show1}>
-							<div className='info-box'> 
-								A fun description goes here
-							</div>
-						</Fade>
-					</div>
-					<div className='fun'>
-						<img src='/prof-pic.jpeg' className='fun-thumb' name='show2' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-						<Fade clear when={this.state.show2}>
-							<div className='info-box'> 
-								A fun description goes here
-							</div>
-						</Fade>
-					</div>
-					<div className='fun'>
-						<img src='/prof-pic.jpeg' className='fun-thumb' name='show3' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-						<Fade clear when={this.state.show3}>
-							<div className='info-box'> 
-								A fun description goes here
-							</div>
-						</Fade>
-					</div>
-					<div className='fun'>
-						<img src='/prof-pic.jpeg' className='fun-thumb' name='show4' onMouseOver={this.handleShow} onMouseOut={this.handleHide}  />
-						<Fade clear when={this.state.show4}>
-							<div className='info-box'> 
-								A fun description goes here
-							</div>
-						</Fade>
-					</div>
-				</Fade>
+			<div className='info-box'>
+				<div>
+					<p>{text}<br />(coming soon)</p>
+				</div>
 			</div>
 		)
 	}
+
+	return(
+		<div className='fun-container'>
+			<Fade right cascade>
+				<div className='fun'>
+					<Reveal animated='small fade'>
+						<Reveal.Content visible >
+							<Image src='/prof-pic.jpeg' className='fun-thumb' />
+						</Reveal.Content>
+						<Reveal.Content hidden children={content('selected writing')} className='fun-content'>
+						</Reveal.Content>
+					</Reveal>
+				</div>	
+
+
+				<div className='fun'>
+					<Reveal animated='small fade'>
+						<Reveal.Content visible >
+							<Image src='/prof-pic.jpeg' className='fun-thumb' />
+						</Reveal.Content>
+						<Reveal.Content hidden children={content('photo gallery')} className='fun-content'>
+						</Reveal.Content>
+					</Reveal>
+				</div>	
+
+				<div className='fun'>
+					<Reveal animated='small fade'>
+						<Reveal.Content visible >
+							<Image src='/prof-pic.jpeg' className='fun-thumb' />
+						</Reveal.Content>
+						<Reveal.Content hidden children={content('doodles')} className='fun-content'>
+						</Reveal.Content>
+					</Reveal>
+				</div>
+
+				<div className='fun'>
+					<Reveal animated='small fade'>
+						<Reveal.Content visible >
+							<Image src='/prof-pic.jpeg' className='fun-thumb' />
+						</Reveal.Content>
+						<Reveal.Content hidden children={content('a/v')} className='fun-content'>
+						</Reveal.Content>
+					</Reveal>
+				</div>
+
+			</Fade>
+		</div>
+	)
 }
 export default FunStuff;

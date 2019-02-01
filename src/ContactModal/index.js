@@ -1,19 +1,19 @@
 import React from 'react';
 
-import { Icon, Header, Modal } from 'semantic-ui-react';
+import { Icon, Modal } from 'semantic-ui-react';
 
 const ContactModal = (props) => {
 	return(
 		<div className='contact'>
 			<Modal open={props.showModal} dimmer='blurring' >
-				<Modal.Header><h1 className='modal-header'>drop me a line</h1></Modal.Header>
+				<Modal.Header><h1 className='modal-header'>questions? shoot</h1></Modal.Header>
 				<Modal.Content>
 					<div className='modal-content'>
 						<p>Got a weird question? Looking for a new friend? Want a cool website like this one?</p>
 						<p>The best way to reach me is via email:</p>
-						<h1 className='black'>john (dOT) hardberger (aT) gmail (dOt) com</h1>
+						<h1 className='black'>john (dot) hardberger (at) gmail (dot) com</h1>
 						<br />
-						<p>But you can also find me on theses choice platforms:</p>
+						<p>But you can also find me on these choice platforms:</p>
 						<div className='icons'>
 							<a href='https://github.com/jhardberger' title='John Hardberger on github'>
 								<Icon color='white' size='big' name='github square' />

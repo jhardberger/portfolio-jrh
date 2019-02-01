@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-import { Fade } from 'react-reveal';
-import { List } from 'semantic-ui-react';
-
-
-
 class Nav extends Component {
 
 	render(){

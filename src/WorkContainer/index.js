@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-import Waypoint 		from 'react-waypoint';
-import { Parallax } 	from 'react-scroll-parallax';
-import { Fade, Slide }  from 'react-reveal';
-import { Icon } 		from 'semantic-ui-react';
+import Waypoint 	from 'react-waypoint';
+import { Parallax } from 'react-scroll-parallax';
+import { Fade }  	from 'react-reveal';
+import { Icon } 	from 'semantic-ui-react';
+
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class WorkContainer extends Component {
 	constructor(){
@@ -52,34 +54,36 @@ class WorkContainer extends Component {
 			<div className="work-container">
 
 				<Fade clear opposite when={this.state.show1}>
-					<div className="project" id="project-1">
-						<Waypoint onEnter={this.handle1} onLeave={this.handle1}/>
-						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' />
-						</Parallax>
-						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-							<div className='project-body'>
-								<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-									<h1>beatgrinder</h1>
-									<Icon name='chevron left' className='demo-arrow' />
-									<div className='demo'>
-										<Fade right when={this.state.showDemo} >click to demo</Fade>
+					<ScrollableAnchor id={'work'}>
+						<div className="project" id="project-1">
+							<Waypoint onEnter={this.handle1} onLeave={this.handle1}/>
+							<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
+								<img src='/prof-pic.jpeg' className='project-img' alt='BeatGrinder thumbnail' />
+							</Parallax>
+							<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
+								<div className='project-body'>
+									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+										<h1>beatgrinder</h1>
+										<Icon name='chevron left' className='demo-arrow' />
+										<div className='demo'>
+											<Fade right when={this.state.showDemo} >click to demo</Fade>
+										</div>
 									</div>
+									<p>As an avid music listener with wide-ranging tastes, I've always found Spotify's Discovery feature a little limited: As a user, it rarely feels like you're really "discovering" anything so much as being spoonfead a random mash of vaguely similar artists. This is partially because Spotify doesn't share with its users any of the metrics by which it organizes its tunes. 
+									</p>
+									<p>BeatGrinder is my attempt to create a more organic music discovery experience. It's a full-stack app built with React and Node.js that makes extensive use of the Spotify API. A user can log in with their Spotify account and create "grinds" — never-ending playlists that a user can customize using the musical qualities that Spotify assigns, behind the scenes, to every song. Think of a it as a responsive radio station that lets you set the vibe. 
+									</p>
 								</div>
-								<p>As an avid music listener with wide-ranging tastes, I've always found Spotify's Discovery feature a little limited: As a user, it rarely feels like you're really "discovering" anything so much as being spoonfead a random mash of vaguely similar artists. This is partially because Spotify doesn't share with its users any of the metrics by which it organizes its tunes. 
-								</p>
-								<p>BeatGrinder is my attempt to create a more organic music discovery experience. It's a full-stack app built with React and Node.js that makes extensive use of the Spotify API. A user can log in with their Spotify account and create "grinds" — never-ending playlists that a user can customize using the musical qualities that Spotify assigns, behind the scenes, to every song. Think of a it as a responsive radio station that lets you set the vibe. 
-								</p>
-							</div>
-						</Parallax>
-					</div>
+							</Parallax>
+						</div>
+					</ScrollableAnchor>
 				</Fade>
 
 				<Fade clear opposite when={this.state.show2}>				
 					<div className="project" id="project-2">
 						<Waypoint onEnter={this.handle2} onLeave={this.handle2}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' />
+							<img src='/prof-pic.jpeg' className='project-img' alt='Mapulate thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<div className='project-body'>
@@ -103,7 +107,7 @@ class WorkContainer extends Component {
 					<div className="project" id="project-3">
 						<Waypoint onEnter={this.handle3} onLeave={this.handle3}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' />
+							<img src='/prof-pic.jpeg' className='project-img' alt='Waxxy thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<div className='project-body'>
@@ -127,7 +131,7 @@ class WorkContainer extends Component {
 					<div className="project" id="project-4">
 						<Waypoint onEnter={this.handle4} onLeave={this.handle4}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' />
+							<img src='/prof-pic.jpeg' className='project-img' alt='Qwerty Derby thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<div className='project-body'>
@@ -138,7 +142,8 @@ class WorkContainer extends Component {
 										<Fade right when={this.state.showDemo} >click to demo</Fade>
 									</div>
 								</div>
-								<p>The first code I wrote (that's fit to share), Qwerty Derby is a pick-up-and-play typing game that doesn't pull any punches: it's both surprisingly difficult and surprisingly addicting. Just try to keep up with those verbal fastballs, because, as in real baseball, it's three strikes and you're out! 
+								<p>The first code I wrote (that's fit to share), Qwerty Derby is a pick-up-and-play typing game that doesn't pull any punches: it's both surprisingly difficult and, in the opinion of some of my General Assebmly classmates, surprisingly addicting.</p>
+								<p>I made Qwerty Derby when I was first dipping my testing the waters of what I could do with programming. It's written in vanilla Javascript, and has some neat elements — I'm especially proud of the animation, which is advanced by keystroke. Try it out! Just keep an eye on those verbal fastballs: as in real baseball, it's three strikes and you're out! 
 								</p>
 							</div>
 						</Parallax>

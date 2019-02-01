@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Icon, Header, Modal } from 'semantic-ui-react';
+import { Icon, Modal } from 'semantic-ui-react';
 
 const ResumeModal = (props) => {
 	return(

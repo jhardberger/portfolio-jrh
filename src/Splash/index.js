@@ -5,8 +5,6 @@ import NamePara from '../NamePara/index';
 
 import { Fade }           from 'react-reveal';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import Waypoint 		  from 'react-waypoint';
-
 
 const Splash = (props) => {
 

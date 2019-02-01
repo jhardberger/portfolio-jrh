@@ -6,7 +6,6 @@ import Splash from './Splash/index';
 import Body from './Body/index';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Waypoint             from 'react-waypoint';
 
 import './App.css';
 

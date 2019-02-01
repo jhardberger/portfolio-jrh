@@ -121,9 +121,8 @@ a:hover {
 .nav-bar {
   padding-left: 30px;
   padding-right: 30px;
-  height: 45px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background: black;
@@ -131,10 +130,11 @@ a:hover {
   z-index: 1;
 }
 
+/*add media query to even out spacing on mobile <----- NOTE*/
+
 .nav {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
   color: white;
@@ -180,14 +180,15 @@ a:hover {
 
 .bio {
   padding-top: 30px;
-  padding-bottom: 30px;
   padding-right: 30px;
 }
 
-/*ADD MEDIA QUERRY TO CENTER PIC <-------- NOTE*/
-
 .prof-pic-container {
   float: left;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .prof-pic {
@@ -199,8 +200,37 @@ a:hover {
 .bio-copy {
   text-align: left;
 }
+/*skills container*/
+
+.skills {
+  width: 300px;
+}
+
+.skills-head {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.skills-head:hover {
+  text-transform: uppercase;
+}
+
+.skill-labels {
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+}
+
+.skill-labels > div {
+  padding: 1px;
+}
+
+.skills-labels > div:hover {
+  color: tomato;
+}
 
 /*work container*/
+
+/*this whole section will need a media query overhaul <---- NOTE*/
 
 .work-container {
   display: flex;
@@ -238,13 +268,20 @@ a:hover {
 }
 
 .project-head {
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
+  justify-content: left;
   align-content: center;
 }
 
+.project-head > h1 {
+  background: black;
+  padding: 5px;
+}
+
 .demo-arrow {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
   color: tomato;
@@ -253,7 +290,7 @@ a:hover {
 .demo {
   font-family: 'Major Mono Display', monospace;
   font-size: 20px;
-  padding-top: 4px;
+  padding-top: 8px;
 }
 
 #project-1 {
@@ -277,30 +314,35 @@ a:hover {
 .fun-container {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 200px;
-  padding-right: 60px;
+  flex-flow: row;
+  padding-top: 120px;
+  padding-bottom: 90px;
 }
+
+/*add media query to wrap divs <--------- NOTE*/
 
 .fun {
-  height: 200px;
-  width: 200px;
-  padding: 30px;
-}
-
-.fun-thumb {
-  display: block;
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  z-index: 0;
+  height: 300px;
+  width: 300px;
 }
 
 .info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
   width: 200px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  position: absolute;
-  z-index: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: gainsboro;
+}
+
+.info-box > div > p {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+
 }
 
 /*footer container*/

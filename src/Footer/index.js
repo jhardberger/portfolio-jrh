@@ -3,9 +3,7 @@ import React from 'react';
 import { Icon } from 'semantic-ui-react';
 
 const Footer = () => {
-	const icons = () => {
-		
-	}
+	
 	return(
 		<div className='footer'>
 			<div className='footer-copy'>
