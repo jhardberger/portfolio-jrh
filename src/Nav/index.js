@@ -14,7 +14,7 @@ class Nav extends Component {
 				</div>
 				<ul className='nav'>
 					<li><a href='#hi'> hi </a></li>
-					<li><a href='#work'> work </a></li>
+					<li><a href='#beatgrinder'> work </a></li>
 					<li><a href='#play'> play </a></li>
 					<li onClick={handleResume}><a href='javascript:;'> résumé </a></li>
 					<li onClick={handleModal}><a href='javascript:;'> contact </a></li>

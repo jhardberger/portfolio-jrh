@@ -7,7 +7,7 @@ import { Icon } 	from 'semantic-ui-react';
 
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
-configureAnchors({offset: -226, scrollDuration: 200});
+configureAnchors({offset: 226, scrollDuration: 200});
 
 class WorkContainer extends Component {
 	constructor(){
@@ -54,33 +54,30 @@ class WorkContainer extends Component {
 	render(){
 		return(
 			<div className="work-container">
-
 				<Fade clear opposite when={this.state.show1}>
-					<ScrollableAnchor id={'work'}>
-						<div className="project" id="project-1">
-							<Waypoint onEnter={this.handle1} onLeave={this.handle1}/>
-							<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-								<img src='/prof-pic.jpeg' className='project-img' alt='BeatGrinder thumbnail' />
-							</Parallax>
-							<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
-								<ScrollableAnchor id={'beatgrinder'} >
-									<div className='project-body'>
-										<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-											<h1>beatgrinder</h1>
-											<Icon name='chevron left' className='demo-arrow' />
-											<div className='demo'>
-												<Fade right when={this.state.showDemo} >click to demo</Fade>
-											</div>
+					<div className="project" id="project-1">
+						<Waypoint onEnter={this.handle1} onLeave={this.handle1}/>
+						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
+							<img src='/prof-pic.jpeg' className='project-img' alt='BeatGrinder thumbnail' />
+						</Parallax>
+						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
+								<div className='project-body'>
+									<ScrollableAnchor id={'beatgrinder'} >
+									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+										<h1>beatgrinder</h1>
+										<Icon name='chevron left' className='demo-arrow' />
+										<div className='demo'>
+											<Fade right when={this.state.showDemo} >click to demo</Fade>
 										</div>
-										<p>As an avid music listener with wide-ranging tastes, I've always found Spotify's Discovery feature a little limited: As a user, it rarely feels like you're really "discovering" anything so much as being spoonfead a random mash of vaguely similar artists. This is partially because Spotify doesn't share with its users any of the metrics by which it organizes its tunes. 
-										</p>
-										<p>BeatGrinder is my attempt to create a more organic music discovery experience. It's a full-stack app built with React and Node.js that makes extensive use of the Spotify API. A user can log in with their Spotify account and create "grinds" — never-ending playlists that a user can customize using the musical qualities that Spotify assigns, behind the scenes, to every song. Think of a it as a responsive radio station that lets you set the vibe. 
-										</p>
 									</div>
-								</ScrollableAnchor>
-							</Parallax>
-						</div>
-					</ScrollableAnchor>
+									</ScrollableAnchor>
+									<p>As an avid music listener with wide-ranging tastes, I've always found Spotify's Discovery feature a little limited: As a user, it rarely feels like you're really "discovering" anything so much as being spoonfead a random mash of vaguely similar artists. This is partially because Spotify doesn't share with its users any of the metrics by which it organizes its tunes. 
+									</p>
+									<p>BeatGrinder is my attempt to create a more organic music discovery experience. It's a full-stack app built with React and Node.js that makes extensive use of the Spotify API. A user can log in with their Spotify account and create "grinds" — never-ending playlists that a user can customize using the musical qualities that Spotify assigns, behind the scenes, to every song. Think of a it as a responsive radio station that lets you set the vibe. 
+									</p>
+								</div>
+						</Parallax>
+					</div>
 				</Fade>
 
 				<Fade clear opposite when={this.state.show2}>				

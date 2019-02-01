@@ -35,7 +35,7 @@ class Body extends Component {
 			            	handleModal={this.props.handleModal} 
 			            />
 			            
-			            <a href='#work'>
+			            <a href='#beatgrinder'>
 				            <div className='scroll-instruction'>
 				            	<Fade bottom opposite>
 					            		<h1>recent work</h1>
@@ -54,7 +54,7 @@ class Body extends Component {
 								</Fade>
 							</div>	
 			            </a>
-			            
+
 			            <FunStuff />
 			            
 		            </div>
