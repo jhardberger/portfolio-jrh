@@ -2,10 +2,12 @@ import React from 'react';
 
 import Skills from '../Skills/index';
 
-import Waypoint 		from 'react-waypoint';
-import { Fade } 		from 'react-reveal';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import Waypoint from 'react-waypoint';
+import { Fade } from 'react-reveal';
 
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
+configureAnchors({offset: -60, scrollDuration: 200});
 
 const Bio = (props) => {
 	

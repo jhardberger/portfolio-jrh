@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Fade } 		 from 'react-reveal';
 import { Image, Reveal } from 'semantic-ui-react';
-import ScrollableAnchor  from 'react-scrollable-anchor';
 
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
+configureAnchors({offset: -60, scrollDuration: 200});
 
 const FunStuff = () => {
 	function content(text) {
