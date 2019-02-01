@@ -119,8 +119,7 @@ a:hover {
 /*nav container*/
 
 .nav-bar {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0px 30px 0px 30px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -152,8 +151,7 @@ a:hover {
   justify-content: center;
   position: relative;
   z-index: 0; 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 /*bio container*/
@@ -179,8 +177,7 @@ a:hover {
 }
 
 .bio {
-  padding-top: 30px;
-  padding-right: 30px;
+  padding: 30px 30px 0px 0px;
 }
 
 .prof-pic-container {
@@ -281,9 +278,7 @@ a:hover {
 }
 
 .demo-arrow {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px 5px 0px 5px;
   color: tomato;
 }
 
@@ -315,8 +310,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   flex-flow: row;
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding: 120px 30px 90px 30px;
 }
 
 /*add media query to wrap divs <--------- NOTE*/
@@ -332,8 +326,7 @@ a:hover {
   align-items: center;
   height: 200px;
   width: 200px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px 0px 10px;
   background-color: gainsboro;
 }
 
@@ -350,8 +343,7 @@ a:hover {
 .footer {
   height: 100px;
   width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0px 30px 0px 30px;
   background: black;
   color: white;
   display: flex;
