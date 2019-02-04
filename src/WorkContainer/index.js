@@ -58,13 +58,15 @@ class WorkContainer extends Component {
 					<div className="project" id="project-1">
 						<Waypoint onEnter={this.handle1} onLeave={this.handle1}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' alt='BeatGrinder thumbnail' />
+							<img src='/bg.png' className='project-img' alt='BeatGrinder thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 								<div className='project-body'>
 									<ScrollableAnchor id={'beatgrinder'} >
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-										<h1>beatgrinder</h1>
+										<h1>
+											<a href='https://github.com/jhardberger/sm_client'>beatgrinder</a>
+										</h1>
 										<Icon name='chevron left' className='demo-arrow' />
 										<div className='demo'>
 											<Fade right when={this.state.showDemo} >click to demo</Fade>
@@ -84,13 +86,15 @@ class WorkContainer extends Component {
 					<div className="project" id="project-2">
 						<Waypoint onEnter={this.handle2} onLeave={this.handle2}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' alt='Mapulate thumbnail' />
+							<img src='/mapulate.png' className='project-img' alt='Mapulate thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<ScrollableAnchor id={'mapulate'} >
 								<div className='project-body'>
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-										<h1>mapulate</h1>
+										<h1>
+											<a href='https://github.com/jhardberger/Project_3_backend'>mapulate</a>
+										</h1>
 										<Icon name='chevron left' className='demo-arrow' />
 										<div className='demo'>
 											<Fade right when={this.state.showDemo} >click to demo</Fade>
@@ -110,13 +114,15 @@ class WorkContainer extends Component {
 					<div className="project" id="project-3">
 						<Waypoint onEnter={this.handle3} onLeave={this.handle3}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' alt='Waxxy thumbnail' />
+							<img src='/waxxy.png' className='project-img' alt='Waxxy thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<ScrollableAnchor id={'waxxy'} >
 								<div className='project-body'>
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-											<h1>waxxy</h1>
+											<h1>
+												<a href='https://github.com/jhardberger/project_2' target="_blank">waxxy</a>
+											</h1>
 											<Icon name='chevron left' className='demo-arrow' />
 											<div className='demo'>
 												<Fade right when={this.state.showDemo} >click to demo</Fade>
@@ -136,13 +142,15 @@ class WorkContainer extends Component {
 					<div className="project" id="project-4">
 						<Waypoint onEnter={this.handle4} onLeave={this.handle4}/>
 						<Parallax offsetYMax='45' offsetYMin='-45' slowerScrollRate >
-							<img src='/prof-pic.jpeg' className='project-img' alt='Qwerty Derby thumbnail' />
+							<img src='/qd.png' className='project-img' alt='Qwerty Derby thumbnail' />
 						</Parallax>
 						<Parallax offsetYMax='-45' offsetYMin='45' slowerScrollRate >
 							<ScrollableAnchor id={'qwerty'}>
 								<div className='project-body'>
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
-										<h1>qwerty derby</h1>
+										<h1>
+											<a href='https://github.com/jhardberger/project-1-game' target="_blank">qwerty derby</a>
+											</h1>
 										<Icon name='chevron left' className='demo-arrow' />
 										<div className='demo'>
 											<Fade right when={this.state.showDemo} >click to demo</Fade>
