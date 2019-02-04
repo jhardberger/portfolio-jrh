@@ -25,7 +25,7 @@ const FunStuff = () => {
 					<div className='fun'>
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
-								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+								<Image src='' className='fun-thumb' />
 							</Reveal.Content>
 							<Reveal.Content hidden children={content('selected writing')} className='fun-content'>
 							</Reveal.Content>
@@ -36,7 +36,7 @@ const FunStuff = () => {
 					<div className='fun'>
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
-								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+								<Image src='' className='fun-thumb' />
 							</Reveal.Content>
 							<Reveal.Content hidden children={content('photo gallery')} className='fun-content'>
 							</Reveal.Content>
@@ -46,7 +46,7 @@ const FunStuff = () => {
 					<div className='fun'>
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
-								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+								<Image src='' className='fun-thumb' />
 							</Reveal.Content>
 							<Reveal.Content hidden children={content('doodles')} className='fun-content'>
 							</Reveal.Content>
@@ -56,7 +56,7 @@ const FunStuff = () => {
 					<div className='fun'>
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
-								<Image src='/prof-pic.jpeg' className='fun-thumb' />
+								<Image src='' className='fun-thumb' />
 							</Reveal.Content>
 							<Reveal.Content hidden children={content('a/v')} className='fun-content'>
 							</Reveal.Content>
