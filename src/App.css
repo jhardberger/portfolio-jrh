@@ -80,6 +80,21 @@ a:hover {
 
 /*resume modal*/
 
+.resume-header {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-img {
+  width: 600px;
+}
+
 /*splash container/parallax*/
 
 .splash-page {
