@@ -121,7 +121,7 @@ class WorkContainer extends Component {
 								<div className='project-body'>
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
 											<h1>
-												<a href='https://github.com/jhardberger/project_2' target="_blank">waxxy</a>
+												<a href='https://github.com/jhardberger/project_2' target="_blank" rel="noopener noreferrer">waxxy</a>
 											</h1>
 											<Icon name='chevron left' className='demo-arrow' />
 											<div className='demo'>
@@ -149,7 +149,7 @@ class WorkContainer extends Component {
 								<div className='project-body'>
 									<div className='project-head' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
 										<h1>
-											<a href='https://github.com/jhardberger/project-1-game' target="_blank">qwerty derby</a>
+											<a href='https://github.com/jhardberger/project-1-game' target="_blank" rel="noopener noreferrer">qwerty derby</a>
 											</h1>
 										<Icon name='chevron left' className='demo-arrow' />
 										<div className='demo'>
