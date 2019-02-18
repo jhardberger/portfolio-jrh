@@ -9,6 +9,7 @@ const ContactModal = (props) => {
 				<Modal.Header><h1 className='modal-header'>questions? shoot</h1></Modal.Header>
 				<Modal.Content>
 					<div className='modal-content'>
+						<a href='javascript:;'><Icon name='remove' onClick={props.handleModal}/></a><br/>
 						<p>Got a weird question? Looking for a new friend? Want a cool website like this one?</p>
 						<p>The best way to reach me is via email:</p>
 						<h1 className='black'>john (dot) hardberger (at) gmail (dot) com</h1>
@@ -26,7 +27,6 @@ const ContactModal = (props) => {
 							</a>
 						</div>
 						<br/>
-						<a href='javascript:;'><Icon name='remove' onClick={props.handleModal}/></a>
 					</div>
 				</Modal.Content>
 			</Modal>
