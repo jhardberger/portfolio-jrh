@@ -160,6 +160,7 @@ a:hover {
 
 .nav > li:hover{
   text-transform: uppercase;
+  color: tomato;
 }
 
 /*body sans splash container*/
