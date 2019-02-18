@@ -24,7 +24,7 @@ const Bio = (props) => {
 				<div className='bio'>
 					<div className='prof-pic-container'>
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as young man' />
-						<Skills />
+						<Skills handleResume={props.handleResume} />
 					</div>
 					<div className='bio-copy'>
 						<p>A curious person with a wide range of interests, I’ve always struggled to find focus in my work life. I flirted with careers in graphic design, DJing, and podcasting before settling into a three-year editorial journey, in the course of which I was lucky enough to work as a fact-checker, reporter, writer, and editor for such stellar publications as <i>Food Network</i> magazine, <i>Chicago</i> magazine, the <i> Chicago Tribune</i>, and ApartmentTherapy.com. I’m immensely proud of that work, but found that, over the course of those years, I had drifted away from what excited me about journalism in the first place. I’m still writing, but these days I’m trying to limit the scope of my work to that which I'm truly passionate about — to tell only the stories that grab me and don't let go. 

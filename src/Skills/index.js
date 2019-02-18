@@ -5,7 +5,7 @@ import { Fade } 		  		  from 'react-reveal';
 
 
 
-const Skills = () => {
+const Skills = (props) => {
 
 	const skillList = [
 		'React', 'JavaScript', 'APIs', 'Node.js', 'SQL', 'Redux', 'Firebase', 'HTML5', 'CSS3', 'Python', 'Adobe', 'Photography', 'Copyediting', 'Writing', 'Audio Prod'
@@ -18,7 +18,7 @@ const Skills = () => {
 	return(
 		<div className='skills'>
 			<Divider horizontal><Header><div className='skills-head'>skills</div></Header></Divider>
-			<div className='skill-labels'>
+			<div className='skill-labels' onClick={props.handleResume}>
 				<Fade left cascade>
 					{labels}
 				</Fade>

@@ -32,7 +32,9 @@ class Body extends Component {
 			            <Bio 
 			            	handleHideName={this.props.handleHideName} 
 			            	handleHideScroll={this.props.handleHideScroll} 
+			            	handleResume={this.props.handleResume}
 			            	handleModal={this.props.handleModal} 
+
 			            />
 			            
 			            <a href='#beatgrinder'>
