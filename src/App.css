@@ -208,7 +208,7 @@ a:hover {
 }
 
 .prof-pic-container {
-  padding-right: 10px;
+  padding-right: 15px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -240,7 +240,7 @@ a:hover {
 
 .skill-labels {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-flow: row wrap;
 }
 

@@ -8,7 +8,7 @@ import { Fade } 		  		  from 'react-reveal';
 const Skills = (props) => {
 
 	const skillList = [
-		'React', 'JavaScript', 'APIs', 'Node.js', 'SQL', 'Redux', 'Firebase', 'HTML5', 'CSS3', 'Python', 'Adobe', 'Photography', 'Copyediting', 'Writing', 'Audio Prod'
+		'JavaScript', 'React', 'Redux', 'Firebase', 'HTML5', 'CSS3', 'APIs', 'Node.js', 'SQL', 'Python', 'Adobe', 'Video', 'Photography', 'Copyediting', 'Writing', 'Audio Production'
 	]
 
 	const labels = skillList.map((skill, i) => {
