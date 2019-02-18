@@ -158,6 +158,10 @@ a:hover {
   padding-left: 10px;
 }
 
+.nav > li:hover{
+  text-transform: uppercase;
+}
+
 /*body sans splash container*/
 
 .content {
