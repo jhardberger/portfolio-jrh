@@ -365,7 +365,13 @@ a:hover {
   align-items: center;
 }
 
+/*spacers(until I learn a better way)*/
+.space-0 {
+  height: 100px;
+}
 
+.space-1 {
+}
 
 
 
