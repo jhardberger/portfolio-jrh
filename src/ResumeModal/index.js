@@ -13,7 +13,7 @@ const ResumeModal = (props) => {
 					<div className='resume-content'>
 						<a href='javascript:;'><Icon name='remove' onClick={props.handleResume} /></a>
 
-						<img src='johnhardberger_resume_2019.png' className='resume-img' />
+						<img src='john-hardberger-resume_2019.jpg' className='resume-img' />
 					</div>
 				</Modal.Content>
 			</Modal>
