@@ -275,7 +275,7 @@ a:hover {
   justify-content: left;
   align-content: left;
   padding-right: 60px;
-  width: 600px;
+  width: 500px;
 }
 
 .project-head {
@@ -367,10 +367,7 @@ a:hover {
 
 /*spacers(until I learn a better way)*/
 .space-0 {
-  height: 100px;
-}
-
-.space-1 {
+  height: 80px;
 }
 
 

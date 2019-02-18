@@ -79,6 +79,8 @@ class WorkContainer extends Component {
 									</p>
 									<p>BeatGrinder is my attempt to create a more organic music discovery experience. It's a full-stack app built with React and Node.js that makes extensive use of the Spotify API. A user can log in with their Spotify account and create "grinds" — never-ending playlists that a user can customize using the musical qualities that Spotify assigns, behind the scenes, to every song. Think of a it as a responsive radio station that lets you set the vibe. 
 									</p>
+									<p>BeatGrinder is still in the works, but feel free to check out the code on GitHub and keep your eyes peeled for a launch later this year.
+									</p>
 								</div>
 						</Parallax>
 					</div>
@@ -158,8 +160,8 @@ class WorkContainer extends Component {
 											<Fade right when={this.state.showDemo} >click to demo</Fade>
 										</div>
 									</div>
-									<p>The first code I wrote (that's fit to share), Qwerty Derby is a pick-up-and-play typing game that doesn't pull any punches: it's both surprisingly difficult and, in the opinion of some of my General Assebmly classmates, surprisingly addicting.</p>
-									<p>I made Qwerty Derby when I was first dipping my testing the waters of what I could do with programming. It's written in vanilla Javascript, and has some neat elements — I'm especially proud of the animation, which is advanced by keystroke. Try it out! Just keep an eye on those verbal fastballs: as in real baseball, it's three strikes and you're out! 
+									<p>The first code I wrote (that's fit to share), Qwerty Derby is a pick-up-and-play typing game that doesn't pull any punches: it's both surprisingly difficult and, in the opinion of some of my General Assembly classmates, surprisingly addicting.</p>
+									<p>I made Qwerty Derby when I was first testing the waters of what I could do with programming. It's written in vanilla Javascript, and has some neat elements — I'm especially proud of the animation, which is advanced by keystroke. Try it out! Just keep an eye on those verbal fastballs: as in real baseball, it's three strikes and you're out! 
 									</p>
 								</div>
 							</ScrollableAnchor>
