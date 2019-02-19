@@ -100,7 +100,6 @@
 
   .letter {
     font-size: 90px;
-    letter-spacing: 0em;
   }
 
   /*scroll container*/
@@ -120,7 +119,7 @@
 
   .nav-bar {
     padding: 0px 15px 0px 15px;
-    height: 30px;
+    height: 60px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -432,7 +431,6 @@
 
   .letter {
     font-size: 90px;
-    letter-spacing: 0em;
   }
 
   /*scroll container*/
@@ -461,8 +459,6 @@
     z-index: 1;
   }
 
-  /*add media query to even out spacing on mobile <----- NOTE*/
-
   .nav {
     list-style-type: none;
     display: flex;
@@ -478,6 +474,10 @@
   .nav > li:hover{
     text-transform: uppercase;
     color: tomato;
+  }
+
+  .mobile-nav {
+    display: none;  
   }
 
   /*body sans splash container*/
