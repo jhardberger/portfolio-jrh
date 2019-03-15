@@ -27,6 +27,8 @@ class WorkContainer extends Component {
 		this.hideDemo = this.hideDemo.bind(this);
 	}
 
+	//someday I will come dry all this up LOL
+
 	handle1(){
 		this.setState({ show1: !this.state.show1 });
 	}
