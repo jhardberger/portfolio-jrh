@@ -122,7 +122,7 @@
     height: 60px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: black;
     position: relative;
@@ -130,6 +130,10 @@
   }
 
   .nav {
+    display: none;
+  }
+
+  .nav-name{
     display: none;
   }
 
@@ -218,6 +222,8 @@
   .project-img {
     height: 200px;
     padding-right: 10px;
+    border-radius: 15px 15px 0px 15px;
+
   }
 
   .project-body {
