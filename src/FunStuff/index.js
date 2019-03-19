@@ -36,7 +36,7 @@ const FunStuff = () => {
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
 							</Reveal.Content>
-							<Reveal.Content hidden children={content('photo gallery')} className='fun-content'>
+							<Reveal.Content hidden children={content('photo gallery		 coming soon')} className='fun-content'>
 							</Reveal.Content>
 						</Reveal>
 					</div>	
@@ -45,7 +45,7 @@ const FunStuff = () => {
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
 							</Reveal.Content>
-							<Reveal.Content hidden children={content('doodles')} className='fun-content'>
+							<Reveal.Content hidden children={content('doodles & designs		 coming soon')} className='fun-content'>
 							</Reveal.Content>
 						</Reveal>
 					</div>
@@ -54,7 +54,7 @@ const FunStuff = () => {
 						<Reveal animated='small fade'>
 							<Reveal.Content visible >
 							</Reveal.Content>
-							<Reveal.Content hidden children={content('a/v')} className='fun-content'>
+							<Reveal.Content hidden children={content('audio experiments		coming soon')} className='fun-content'>
 							</Reveal.Content>
 						</Reveal>
 					</div>
