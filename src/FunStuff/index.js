@@ -2,8 +2,8 @@ import React from 'react';
 
 import SelectedWritings from '../SelectedWritings';
 
-import { Fade } 		 from 'react-reveal';
-import { Image, Reveal } from 'semantic-ui-react';
+import { Fade } 		 	      from 'react-reveal';
+import { Image, Reveal, Divider } from 'semantic-ui-react';
 
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
@@ -25,10 +25,10 @@ const FunStuff = (props) => {
 			<ScrollableAnchor id={'play'} >
 				<div className='fun-container'>
 					<Fade right cascade>
-						<div className='fun'>
+						<div className='fun' id='selected-writings'>
 							<Reveal animated='small fade' onClick={props.handleWriting} >
 								<Reveal.Content hidden >
-									<Image src='selected-writings.gif' className='fun-thumb' id='selected-writings'/>
+									<Image src='selected-writings.gif' className='fun-thumb' alt='selected writings'/>
 								</Reveal.Content>
 								<Reveal.Content visible children={content('selected writing')} className='fun-content'>
 								</Reveal.Content>
@@ -36,9 +36,9 @@ const FunStuff = (props) => {
 						</div>	
 
 						<div className='fun'>
-							<Reveal animated='small fade'>
+							<Reveal animated='small fade' id='design'>
 								<Reveal.Content hidden >
-									<Image src='design.gif' className='fun-thumb' id='design' />
+									<Image src='design.gif' className='fun-thumb' alt='design' />
 								</Reveal.Content>
 								<Reveal.Content visible children={content('doodles & designs')} className='fun-content'>
 								</Reveal.Content>
@@ -67,7 +67,11 @@ const FunStuff = (props) => {
 				</div>
 			</ScrollableAnchor>
 			<div className='fun-just-copy'>
+				<Divider section />
+
 				<SelectedWritings showWriting={props.showWriting} />
+
+				<Divider section />
 			</div>
 		</div>
 	)

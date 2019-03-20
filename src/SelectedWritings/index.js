@@ -1,16 +1,19 @@
 import React from 'react';
 
-import { Divider, Header, Icon } from 'semantic-ui-react';
-import { Fade } 				 from 'react-reveal';
+import { Header, Icon } from 'semantic-ui-react';
+import { Fade } 		from 'react-reveal';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 const SelectedWritings = (props) => {
 	return(
 		<Fade left opposite when={props.showWriting} >
-			<Divider section />
 			<div className='selected-writings'>
-				<div className='writing-header'>
-					<p>for three years, I was a writer and reporter—mostly about fun stuff, mostly in Chicago—for <i>Chicago</i> magazine, the <i>Chicago Tribune</i> and ApartmentTherapy.com. Here are, in no particular order, a few personal-favorite stories I worked on in that time.</p>
-				</div>
+				<ScrollableAnchor id={'writing'} >
+					<div className='writing-header'>
+						<p>for three years, I was a writer and reporter—mostly about fun stuff, mostly in Chicago—for <i>Chicago</i> magazine, the <i>Chicago Tribune</i> and ApartmentTherapy.com. Here are, in no particular order, a few personal-favorite stories I worked on in that time.</p>
+					</div>
+				</ScrollableAnchor>
 				<Fade left cascade when={props.showWriting} >
 					<ul className='writing-links'>
 						<li>
@@ -51,7 +54,6 @@ const SelectedWritings = (props) => {
 					<p>If you for some reason want to see EVERYTHING I've done (hi dad), hang tight: I'm currently porting that longer list over from my old site to a FireStore database, and I'm hoping to have a visually pleasing way to share it with you real soon.</p>
 				</div>
 			</div>
-			<Divider section />
 		</Fade>
 	)
 }

@@ -701,8 +701,8 @@
   /*add media query to wrap divs <--------- NOTE*/
 
   .fun {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
 
   .fun-thumb {
@@ -716,8 +716,8 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    width: 200px;
-    padding: 0px 10px 0px 10px;
+    width: 190px;
+    padding: 0;
     border-radius: 15px 15px 0px 15px;
     background-color: black;
   }
