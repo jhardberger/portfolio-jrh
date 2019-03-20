@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SelectedWritings from '../SelectedWritings';
+import Design 			from '../Design';
 
 import { Fade } 		 	      from 'react-reveal';
 import { Image, Reveal, Divider } from 'semantic-ui-react';
@@ -70,6 +71,7 @@ const FunStuff = (props) => {
 				<Divider section />
 
 				<SelectedWritings showWriting={props.showWriting} />
+				<Design />
 
 				<Divider section />
 			</div>

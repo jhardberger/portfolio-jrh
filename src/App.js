@@ -18,7 +18,7 @@ class App extends Component {
       showName: true,
       showModal: false,
       showResume: false,
-      showWriting: true
+      showWriting: false,
     };
 
     this.handleHideScroll = this.handleHideScroll.bind(this);
