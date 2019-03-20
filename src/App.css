@@ -223,7 +223,6 @@
     height: 200px;
     padding-right: 10px;
     border-radius: 15px 15px 0px 15px;
-
   }
 
   .project-body {
@@ -286,6 +285,7 @@
   .fun {
     height: 300px;
     width: 300px;
+
   }
 
   .fun-thumb {
@@ -708,6 +708,7 @@
   .fun-thumb {
     height: 200px;
     width: 200px;
+    border-radius: 15px 15px 0px 15px;
   }
 
   .info-box {
@@ -717,6 +718,7 @@
     height: 200px;
     width: 200px;
     padding: 0px 10px 0px 10px;
+    border-radius: 15px 15px 0px 15px;
     background-color: black;
   }
 
