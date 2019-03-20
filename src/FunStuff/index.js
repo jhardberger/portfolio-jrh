@@ -27,10 +27,20 @@ const FunStuff = () => {
 					<Fade right cascade>
 						<div className='fun'>
 							<Reveal animated='small fade'>
-								<Reveal.Content visible >
-									<Image src='selected-writings.gif' className='fun-thumb' />
+								<Reveal.Content hidden >
+									<Image src='selected-writings.gif' className='fun-thumb' id='selected-writings'/>
 								</Reveal.Content>
-								<Reveal.Content hidden children={content('selected writing')} className='fun-content'>
+								<Reveal.Content visible children={content('selected writing')} className='fun-content'>
+								</Reveal.Content>
+							</Reveal>
+						</div>	
+
+						<div className='fun'>
+							<Reveal animated='small fade'>
+								<Reveal.Content hidden >
+									<Image src='design.gif' className='fun-thumb' id='design' />
+								</Reveal.Content>
+								<Reveal.Content visible children={content('doodles & designs')} className='fun-content'>
 								</Reveal.Content>
 							</Reveal>
 						</div>	
@@ -40,15 +50,6 @@ const FunStuff = () => {
 								<Reveal.Content visible >
 								</Reveal.Content>
 								<Reveal.Content hidden children={content('photo gallery		 (coming soon)')} className='fun-content'>
-								</Reveal.Content>
-							</Reveal>
-						</div>	
-
-						<div className='fun'>
-							<Reveal animated='small fade'>
-								<Reveal.Content visible >
-								</Reveal.Content>
-								<Reveal.Content hidden children={content('doodles & designs		 (coming soon)')} className='fun-content'>
 								</Reveal.Content>
 							</Reveal>
 						</div>

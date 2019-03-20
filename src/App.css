@@ -339,6 +339,10 @@
     font-weight: bold;
   }
 
+  .writing-footer {
+    padding-top: 10px;
+  }
+
   /*footer container*/
 
   .footer {
@@ -761,6 +765,11 @@
   .writing-links > li:hover {
     background-color: gainsboro;
   }
+
+  .writing-footer {
+    padding-top: 10px;
+  }
+
 
   /*footer container*/
 
