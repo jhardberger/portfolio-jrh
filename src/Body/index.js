@@ -59,7 +59,10 @@ class Body extends Component {
 
 			            <FunStuff 
 			            	handleWriting={this.props.handleWriting} 
+			            	handleDesign={this.props.handleDesign}
+
 			            	showWriting={this.props.showWriting} 
+			            	showDesign={this.props.showDesign}
 			            />
 			            
 		            </div>

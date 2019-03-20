@@ -37,7 +37,7 @@ const FunStuff = (props) => {
 						</div>	
 
 						<div className='fun'>
-							<Reveal animated='small fade' id='design'>
+							<Reveal animated='small fade' id='design' onClick={props.handleDesign} >
 								<Reveal.Content hidden >
 									<Image src='design.gif' className='fun-thumb' alt='design' />
 								</Reveal.Content>
@@ -71,7 +71,7 @@ const FunStuff = (props) => {
 				<Divider section />
 
 				<SelectedWritings showWriting={props.showWriting} />
-				<Design />
+				<Design showDesign={props.showDesign} />
 
 				<Divider section />
 			</div>

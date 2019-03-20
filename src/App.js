@@ -19,6 +19,7 @@ class App extends Component {
       showModal: false,
       showResume: false,
       showWriting: false,
+      showDesign: true
     };
 
     this.handleHideScroll = this.handleHideScroll.bind(this);
@@ -26,6 +27,7 @@ class App extends Component {
     this.handleResume     = this.handleResume.bind(this); 
     this.handleModal      = this.handleModal.bind(this);
     this.handleWriting    = this.handleWriting.bind(this);
+    this.handleDesign     = this.handleDesign.bind(this);
 
   }
 
@@ -50,7 +52,17 @@ class App extends Component {
   }
 
   handleWriting(){
-    this.setState({ showWriting: !this.state.showWriting });
+    this.setState({ 
+      showWriting: true,
+      showDesign: false 
+    });
+  }
+
+  handleDesign(){
+    this.setState({ 
+      showDesign: true,
+      showWriting: false
+    });
   }
 
   componentDidMount(){
@@ -86,8 +98,10 @@ class App extends Component {
             handleModal={this.handleModal}
             handleResume={this.handleResume}
             handleWriting={this.handleWriting}
+            handleDesign={this.handleDesign}
 
             showWriting={this.state.showWriting}
+            showDesign={this.state.showDesign}
           />
         </ParallaxProvider>
       </div>
