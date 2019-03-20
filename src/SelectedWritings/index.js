@@ -3,15 +3,15 @@ import React from 'react';
 import { Divider, Header, Icon } from 'semantic-ui-react';
 import { Fade } 				 from 'react-reveal';
 
-const SelectedWritings = () => {
+const SelectedWritings = (props) => {
 	return(
-		<Fade left>
+		<Fade left opposite when={props.showWriting} >
 			<Divider section />
 			<div className='selected-writings'>
 				<div className='writing-header'>
 					<p>for three years, I was a writer and reporter—mostly about fun stuff, mostly in Chicago—for <i>Chicago</i> magazine, the <i>Chicago Tribune</i> and ApartmentTherapy.com. Here are, in no particular order, a few personal-favorite stories I worked on in that time.</p>
 				</div>
-				<Fade left cascade>
+				<Fade left cascade when={props.showWriting} >
 					<ul className='writing-links'>
 						<li>
 							<a href='https://www.chicagotribune.com/dining/restaurants/ct-hot-dog-day-unexpected-places-food-0719-20170714-story.html'>

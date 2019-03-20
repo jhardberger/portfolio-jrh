@@ -18,12 +18,14 @@ class App extends Component {
       showName: true,
       showModal: false,
       showResume: false,
+      showWriting: true
     };
 
     this.handleHideScroll = this.handleHideScroll.bind(this);
     this.handleHideName   = this.handleHideName.bind(this);
     this.handleResume     = this.handleResume.bind(this); 
     this.handleModal      = this.handleModal.bind(this);
+    this.handleWriting    = this.handleWriting.bind(this);
 
   }
 
@@ -45,6 +47,10 @@ class App extends Component {
 
   handleResume(){
     this.setState({ showResume: !this.state.showResume });
+  }
+
+  handleWriting(){
+    this.setState({ showWriting: !this.state.showWriting });
   }
 
   componentDidMount(){
@@ -79,6 +85,9 @@ class App extends Component {
             handleHideName={this.handleHideName}
             handleModal={this.handleModal}
             handleResume={this.handleResume}
+            handleWriting={this.handleWriting}
+
+            showWriting={this.state.showWriting}
           />
         </ParallaxProvider>
       </div>

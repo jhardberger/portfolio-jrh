@@ -57,7 +57,10 @@ class Body extends Component {
 							</div>	
 			            </a>
 
-			            <FunStuff />
+			            <FunStuff 
+			            	handleWriting={this.props.handleWriting} 
+			            	showWriting={this.props.showWriting} 
+			            />
 			            
 		            </div>
 		        <Footer />

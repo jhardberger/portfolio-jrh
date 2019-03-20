@@ -9,7 +9,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 configureAnchors({offset: -60, scrollDuration: 200});
 
-const FunStuff = () => {
+const FunStuff = (props) => {
 	function content(text) {
 		return(
 			<div className='info-box'>
@@ -26,7 +26,7 @@ const FunStuff = () => {
 				<div className='fun-container'>
 					<Fade right cascade>
 						<div className='fun'>
-							<Reveal animated='small fade'>
+							<Reveal animated='small fade' onClick={props.handleWriting} >
 								<Reveal.Content hidden >
 									<Image src='selected-writings.gif' className='fun-thumb' id='selected-writings'/>
 								</Reveal.Content>
@@ -67,7 +67,7 @@ const FunStuff = () => {
 				</div>
 			</ScrollableAnchor>
 			<div className='fun-just-copy'>
-				<SelectedWritings />
+				<SelectedWritings showWriting={props.showWriting} />
 			</div>
 		</div>
 	)
