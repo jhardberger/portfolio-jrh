@@ -693,7 +693,7 @@
 
   .fun-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row;
     padding: 180px 30px 0px 30px;
   }
@@ -703,6 +703,9 @@
   .fun {
     height: 250px;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .fun-thumb {
@@ -730,6 +733,10 @@
 
   }
 
+  .fun-just-copy {
+    position: relative;
+  }
+
   /*selected writing*/
 
   .selected-writings{
@@ -738,6 +745,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   .writing-header:first-letter {
@@ -772,6 +780,17 @@
     padding-top: 10px;
   }
 
+  /*design container*/
+
+  .design {
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+  }
 
   /*footer container*/
 
