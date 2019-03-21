@@ -792,6 +792,29 @@
     top: 30px;
   }
 
+  .design-header:first-letter{
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 55px;
+    float: left;
+    line-height: .9;
+    padding-right: 10px;
+  }
+
+  .design-header:hover:first-letter{
+    text-transform: uppercase;
+    color: tomato;
+  }
+
+  .design-port {
+    padding: 30px 0px 30px 0px;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   /*footer container*/
 
   .footer {
