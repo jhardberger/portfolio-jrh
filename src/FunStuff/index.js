@@ -70,8 +70,13 @@ const FunStuff = (props) => {
 			<div className='fun-just-copy'>
 				<Divider section />
 
-				<SelectedWritings showWriting={props.showWriting} />
-				<Design showDesign={props.showDesign} />
+				<SelectedWritings 
+					showWriting={props.showWriting} 
+				/>
+				<Design 
+					showDesign={props.showDesign} 
+					handleDesignModal={props.handleDesignModal}
+				/>
 
 				<Divider section />
 			</div>

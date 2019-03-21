@@ -13,6 +13,7 @@ const Design = (props) => {
 				className='design-thumb' 
 				id={'design-' + i} 
 				size='small' 
+				onClick={props.handleDesignModal}
 			/>
 		)
 	});

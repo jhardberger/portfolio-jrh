@@ -19,7 +19,8 @@ class App extends Component {
       showModal: false,
       showResume: false,
       showWriting: false,
-      showDesign: true
+      showDesign: true,
+      designModal: false,
     };
 
     this.handleHideScroll = this.handleHideScroll.bind(this);
@@ -28,6 +29,7 @@ class App extends Component {
     this.handleModal      = this.handleModal.bind(this);
     this.handleWriting    = this.handleWriting.bind(this);
     this.handleDesign     = this.handleDesign.bind(this);
+    this.handleDesignModal= this.handleDesignModal.bind(this);
 
   }
 
@@ -65,6 +67,17 @@ class App extends Component {
     });
   }
 
+  handleDesignModal(e){
+    e.persist();
+
+    const currentDesignURL = e.target.src;
+    if(!this.state.designModal){
+      this.setState({ designModal: currentDesignURL });
+    }else{
+      this.setState({ designModal: false });
+    }
+  }
+
   componentDidMount(){
     this.handleLoad();
   }
@@ -99,9 +112,11 @@ class App extends Component {
             handleResume={this.handleResume}
             handleWriting={this.handleWriting}
             handleDesign={this.handleDesign}
+            handleDesignModal={this.handleDesignModal}
 
             showWriting={this.state.showWriting}
             showDesign={this.state.showDesign}
+            designModal={this.state.designModal}
           />
         </ParallaxProvider>
       </div>
