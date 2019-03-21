@@ -274,23 +274,24 @@
 
   .fun-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-top: 120px;
-    padding-left: 70px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
   }
 
-  /*add media query to wrap divs <--------- NOTE*/
-
   .fun {
-    height: 300px;
-    width: 300px;
-
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .fun-thumb {
     height: 200px;
     width: 200px;
+    border-radius: 15px 15px 0px 15px;
   }
 
   .info-box {
@@ -299,7 +300,7 @@
     align-items: center;
     height: 200px;
     width: 200px;
-    padding: 0px 10px 0px 10px;
+    border-radius: 15px 15px 0px 15px;
     background-color: black;
   }
 
@@ -309,6 +310,11 @@
     text-align: center;
     color: white;
   }
+
+  .fun-just-copy {
+    position: relative;
+  }
+
 
    /*selected writing*/
 
@@ -341,6 +347,57 @@
 
   .writing-footer {
     padding-top: 10px;
+  }
+
+  /*design component*/
+
+  .design {
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+  }
+
+  .design-header:first-letter{
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 55px;
+    float: left;
+    line-height: .9;
+    padding-right: 10px;
+  }
+
+  .design-port {
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .design-thumb{
+    padding: 15px;
+  }
+
+  .enlarge {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .design-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .design-big {
+    padding: 10px;
   }
 
   /*footer container*/

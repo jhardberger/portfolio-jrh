@@ -23,7 +23,8 @@ const Design = (props) => {
 			<div className='design'>
 				<ScrollableAnchor id={'design'}>
 					<div className='design-header'>
-						<p>I 've always had a deep love of simple, beautiful graphic design, and while that love has informed my approach to a variety of creative roles, growing and learning as a designer has also at times been an endeavor all its own. Below are some flat components I've designed through the years.</p> 
+						<p>I 've always had a deep love of simple, beautiful graphic design, and while that love has informed my approach to a variety of creative roles, growing and learning as a designer has also at times been an endeavor all its own. Below are some flat components I've designed through the years.</p>
+						<p className='enlarge'>(click to enlarge)</p> 
 					</div>
 				</ScrollableAnchor>
 				<div className='design-port'>
