@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import ContactModal from './ContactModal/index';
 import ResumeModal from './ResumeModal/index';
+import DesignModal from './DesignModal/index';
 import Splash from './Splash/index';
 import Body from './Body/index';
 
@@ -95,6 +96,11 @@ class App extends Component {
             handleResume={this.handleResume}
 
             showResume={this.state.showResume}
+          />
+          <DesignModal 
+            handleDesignModal={this.handleDesignModal}
+
+            designModal={this.state.designModal}
           />
           <Splash 
             loaded={this.state.loaded}
