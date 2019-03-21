@@ -8,6 +8,7 @@ const Design = (props) => {
 	const designURLS = ['design1.jpg', 'design2.jpg', 'design3.jpg', 'design4.jpg'];
 	const designs = designURLS.map((design, i) => {
 		return(
+			
 			<Image 
 				src={design} 
 				className='design-thumb' 

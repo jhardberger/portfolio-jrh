@@ -872,6 +872,20 @@
     align-items: center;
   }
 
+  .enlarge {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .enlarge:hover {
+    text-transform: uppercase;
+  }
+
+  .design-thumb:hover {
+    opacity: .5;
+  }
+
   .design-modal {
     display: flex;
     flex-direction: column;
