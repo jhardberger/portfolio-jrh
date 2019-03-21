@@ -26,7 +26,9 @@ const Design = (props) => {
 					</div>
 				</ScrollableAnchor>
 				<div className='design-port'>
-					{designs}
+					<Fade left cascade when={props.showDesign} >
+						{designs}
+					</Fade>
 				</div>
 				<div className='design-footer'>
 					<p>I'm also dabbling in web-based design these days—you can see some examples of that through my dev work (above), the Photo Carousel (also above), and this website (which looks pretty good, if I do say so myself).</p>
