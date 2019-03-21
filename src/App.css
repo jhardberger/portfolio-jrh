@@ -815,6 +815,17 @@
     align-items: center;
   }
 
+  .design-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .design-big {
+    padding: 10px;
+  }
+
   /*footer container*/
 
   .footer {
