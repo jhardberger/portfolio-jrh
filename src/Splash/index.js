@@ -9,8 +9,8 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 const Splash = (props) => {
 
 	return(
-		<div className='splash-page' >
-			<Fade clear when={props.loaded} >
+		<Fade clear when={props.loaded} >
+			<div className='splash-page' >
 				<ParallaxBanner
 					className='splash-parallax'
 					layers={[
@@ -38,8 +38,8 @@ const Splash = (props) => {
 					}}
 				>
 				</ParallaxBanner>
-			</Fade>
-		</div>
+			</div>
+		</Fade>
 	)
 }
 export default Splash;

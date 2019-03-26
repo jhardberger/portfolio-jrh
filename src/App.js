@@ -34,10 +34,6 @@ class App extends Component {
 
   }
 
-  handleLoad(){
-    this.setState({ loaded: true });
-  }
-
   handleHideScroll(){
     this.setState({ showScroll: false});
   }
@@ -80,7 +76,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.handleLoad();
+    this.setState({ loaded: true });
   }
 
   render(){

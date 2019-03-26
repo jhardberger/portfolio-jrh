@@ -803,6 +803,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 2;
+
+  }
+
+  .selected-writings > h1 {
+    color: black;
+    font-size: 60px;
+    padding-bottom: 15px;
   }
 
   .writing-header:first-letter {
@@ -822,6 +830,8 @@
   .writing-links{
     list-style: none;
     padding-right: 60px;
+    position: relative;
+
   }
 
   .writing-links > li {
@@ -846,7 +856,14 @@
     justify-content: left;
     align-items: center;
     position: absolute;
+    z-index: 2;
     top: 30px;
+  }
+
+  .design > h1 {
+    color: black;
+    font-size: 60px;
+    padding-bottom: 15px;
   }
 
   .design-header:first-letter{
@@ -884,6 +901,8 @@
 
   .design-thumb:hover {
     opacity: .5;
+    position: relative;
+    z-index: 2;
   }
 
   .design-modal {
@@ -908,6 +927,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
   }
 
   /*spacers(until I learn a better way)*/
