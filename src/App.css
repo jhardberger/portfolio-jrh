@@ -517,6 +517,14 @@
     z-index: 2;
   }
 
+  .load-screen {
+    position: absolute;
+    z-index: 3;
+    height: 700px;
+    width: 100%;
+    background-color: black;
+  }
+
   /*name parallax container*/
 
   .name-parallax {
