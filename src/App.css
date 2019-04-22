@@ -195,6 +195,10 @@
     padding-top: 15px;
   }
 
+  .bio-copy > h1 {
+    text-align: center;
+  }
+
   /*skills container*/
 
   .skills {
@@ -646,6 +650,10 @@
 
   .bio-copy {
     text-align: left;
+  }
+
+  .bio-copy > h1 {
+    text-align: center;
   }
 
   /*skills container*/
