@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 import ContactModal from './ContactModal/index';
-import ResumeModal from './ResumeModal/index';
-import DesignModal from './DesignModal/index';
-import Splash from './Splash/index';
-import Body from './Body/index';
+import ResumeModal  from './ResumeModal/index';
+import DesignModal  from './DesignModal/index';
+import Splash       from './Splash/index';
+import BodyNew      from './BodyNew/index';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -109,7 +109,7 @@ class App extends Component {
             showScroll={this.state.showScroll} 
             showName={this.state.showName}
           />
-          <Body 
+          <BodyNew 
             handleHideScroll={this.handleHideScroll}
             handleHideName={this.handleHideName}
             handleModal={this.handleModal}
