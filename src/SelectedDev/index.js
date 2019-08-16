@@ -17,40 +17,53 @@ class SelectedDev extends Component {
 			show2: false,
 			show3: false,
 			show4: false,
-			showDemo: false,
 		};
-		this.handle1  = this.handle1.bind(this);
-		this.handle2  = this.handle2.bind(this);
-		this.handle3  = this.handle3.bind(this);
-		this.handle4  = this.handle4.bind(this);
-		this.showDemo = this.showDemo.bind(this);
-		this.hideDemo = this.hideDemo.bind(this);
+
+		this.showDemo1 = this.showDemo1.bind(this);
+		this.hideDemo1 = this.hideDemo1.bind(this);
+
+		this.showDemo2 = this.showDemo2.bind(this);
+		this.hideDemo2 = this.hideDemo2.bind(this);
+
+		this.showDemo3 = this.showDemo3.bind(this);
+		this.hideDemo3 = this.hideDemo3.bind(this);
+
+		this.showDemo4 = this.showDemo4.bind(this);
+		this.hideDemo4 = this.hideDemo4.bind(this);
 	}
 
 	//someday I will come dry all this up LOL
 
-	handle1(){
-		this.setState({ show1: !this.state.show1 });
-	}
-	
-	handle2(){
-		this.setState({ show2: !this.state.show2 });
-	}	
-	
-	handle3(){
-		this.setState({ show3: !this.state.show3 });
-	}	
-
-	handle4(){
-		this.setState({ show4: !this.state.show4 });
+	showDemo1(){
+		this.setState({ show1: true });
 	}
 
-	showDemo(){
-		this.setState({ showDemo: true });
+	hideDemo1(){
+		this.setState({ show1: false });
 	}
 
-	hideDemo(){
-		this.setState({ showDemo: false });
+	showDemo2(){
+		this.setState({ show2: true });
+	}
+
+	hideDemo2(){
+		this.setState({ show2: false });
+	}
+
+	showDemo3(){
+		this.setState({ show3: true });
+	}
+
+	hideDemo3(){
+		this.setState({ show3: false });
+	}
+
+	showDemo4(){
+		this.setState({ show4: true });
+	}
+
+	hideDemo4(){
+		this.setState({ show4: false });
 	}
 
 	render(){	
@@ -67,13 +80,13 @@ class SelectedDev extends Component {
 
 					<div className='project'>
 						<div className='project-body' id='project-odd'>
-							<div className='project-head' id='project-head-odd' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+							<div className='project-head' id='project-head-odd' onMouseEnter={this.showDemo1} onMouseLeave={this.hideDemo1}>
 								<h1>
 									<a href='https://github.com/jhardberger/sm_client'>beatgrinder</a>
 								</h1>
 
 								<Icon name='chevron left' className='demo-arrow' />
-								<Fade right when={this.state.showDemo} >
+								<Fade right when={this.state.show1} >
 									<div className='demo'><h2>click to demo</h2></div>
 								</Fade>
 							</div>
@@ -85,13 +98,13 @@ class SelectedDev extends Component {
 
 					<div className='project'>
 						<div className='project-body' id='project-even'>
-							<div className='project-head' id='project-head-even' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+							<div className='project-head' id='project-head-even' onMouseEnter={this.showDemo2} onMouseLeave={this.hideDemo2}>
 								<h1>
 									<a href='https://github.com/jhardberger/Project_3_backend'>mapulate</a>
 								</h1>
 								
 								<Icon name='chevron left' className='demo-arrow' />
-								<Fade right when={this.state.showDemo} >
+								<Fade right when={this.state.show2} >
 									<div className='demo'><h2>click to demo</h2></div>
 								</Fade>
 							</div>
@@ -103,13 +116,13 @@ class SelectedDev extends Component {
 
 					<div className='project'>
 						<div className='project-body' id='project-odd'>
-							<div className='project-head' id='project-head-odd' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+							<div className='project-head' id='project-head-odd' onMouseEnter={this.showDemo3} onMouseLeave={this.hideDemo3}>
 								<h1>
 									<a href='https://github.com/jhardberger/Project_2'>waxxy</a>
 								</h1>
 								
 								<Icon name='chevron left' className='demo-arrow' />
-								<Fade right when={this.state.showDemo} >
+								<Fade right when={this.state.show3} >
 									<div className='demo'><h2>click to demo</h2></div>
 								</Fade>
 							</div>
@@ -121,13 +134,13 @@ class SelectedDev extends Component {
 
 					<div className='project' >
 						<div className='project-body' id='project-even'>
-							<div className='project-head' id='project-head-even' onMouseEnter={this.showDemo} onMouseLeave={this.hideDemo}>
+							<div className='project-head' id='project-head-even' onMouseEnter={this.showDemo4} onMouseLeave={this.hideDemo4}>
 								<h1>
 									<a href='https://github.com/jhardberger/Project-1-game'>qwerty_derby</a>
 								</h1>
 								
 								<Icon name='chevron left' className='demo-arrow' />
-								<Fade right when={this.state.showDemo} >
+								<Fade right when={this.state.show4} >
 									<div className='demo'><h2>click to demo</h2></div>
 								</Fade>
 							</div>

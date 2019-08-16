@@ -737,18 +737,12 @@
     display: flex;
     flex-direction: row;
     margin-left: 0;
-
-    border: 1px green dotted;
-
   }
 
   #project-head-even {
     display: flex;
     flex-direction: row;
     margin-left: 0;
-
-    border: 1px green dotted;
-
   }
 
   .project-head > h1 {
