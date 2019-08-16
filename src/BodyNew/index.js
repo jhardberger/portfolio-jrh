@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Nav           from '../Nav/index';
 import Bio           from '../Bio/index';
-import WorkContainer from '../WorkContainer/index';
+import WorkContainerNew from '../WorkContainerNew/index';
 import FunStuff		 from '../FunStuff/index';
 import Footer		 from '../Footer/index';
 
@@ -35,6 +35,7 @@ class BodyNew extends Component {
 
 		            />
 
+		            <WorkContainerNew />
 			    </div>
 
 	 		</StickyContainer>

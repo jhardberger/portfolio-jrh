@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Skills from '../Skills/index';
-
 import Waypoint from 'react-waypoint';
 import { Fade } from 'react-reveal';
 
@@ -24,7 +22,6 @@ const Bio = (props) => {
 				<div className='bio'>
 					<div className='prof-pic-container'>
 						<img src='/prof-pic.jpeg' className='prof-pic' alt='a portrait of the author as a work in progress' />
-						<Skills handleResume={props.handleResume} />
 					</div>
 					<div className='bio-copy'>
 						<h1>about me</h1>

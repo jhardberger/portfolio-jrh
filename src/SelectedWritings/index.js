@@ -8,7 +8,7 @@ const SelectedWritings = (props) => {
 	return(
 		<Fade left opposite when={props.showWriting} >
 			<div className='selected-writings'>
-				<h1>selected writings</h1>
+				<h1>writing</h1>
 				<ScrollableAnchor id={'writing'} >
 					<div className='writing-header'>
 						<p>for three years, I was a writer and reporter—mostly about fun stuff, mostly in Chicago—for <i>Chicago</i> magazine, the <i>Chicago Tribune</i> and ApartmentTherapy.com. Here are, in no particular order, a few personal-favorite stories I worked on in that time.</p>

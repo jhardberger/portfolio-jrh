@@ -205,75 +205,6 @@
     display: none;
   }
 
-  /*work container*/
-
-  .work-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .project {
-    display: flex;
-    align-items: space-between;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 30px 0px 30px;
-  }
-
-  .project-img {
-    height: 200px;
-    padding-right: 10px;
-    border-radius: 15px 15px 0px 15px;
-  }
-
-  .project-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .project-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .project-head > h1 {
-    background: black;
-    padding: 5px;
-  }
-
-  .demo-arrow {
-    color: rgb(0, 0, 0, 0);
-  }
-
-  .demo {
-    display: none;
-  }
-
-  #project-1 {
-    padding-top: 200px;
-  }
-
-  #project-2 {
-    padding-top: 200px;
-  }
-
-  #project-3 {
-    padding-top: 200px;
-  }
-
-  #project-4 {
-    padding-top: 200px;
-    padding-bottom: 50px;
-  }
-
-
   /*fun stuff container*/
 
   .fun-container {
@@ -688,145 +619,30 @@
 
   .work-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .project {
-    display: flex;
-    align-items: space-between;
     flex-direction: row;
-    height: 120px;
-    width: 840px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    padding-left: 60px;
-    padding-bottom: 120px;
   }
 
-  .project-img {
-    height: 150px;
-    margin-right: 30px;
-    border-radius: 15px 15px 0px 15px;
-  }
-
-  .project-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-content: left;
-    padding-right: 60px;
-    width: 500px;
-  }
-
-  .project-head {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-content: center;
-  }
-
-  .project-head > h1 {
-    border: 1px solid black;
-    border-radius: 15px 15px 15px 0px;
-    background: black;
-    padding: 5px;
-  }
-
-  .demo-arrow {
-    padding: 10px 5px 0px 5px;
-    color: tomato;
-  }
-
-  .demo {
-    font-family: 'Major Mono Display', monospace;
-    font-size: 20px;
-    padding-top: 8px;
-  }
-
-  #project-1 {
-    margin-right: 120px;
-  }
-
-  #project-2 {
-    margin-left: 60px; 
-  }
-
-  #project-3 {
-    margin-right: 60px;
-  }
-
-  #project-4 {
-    margin-left: 120px;
-  }
-
-  /*fun stuff container*/
-
-  .fun-container {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row;
-    padding: 180px 30px 0px 30px;
-  }
-
-  /*add media query to wrap divs <--------- NOTE*/
-
-  .fun {
-    height: 250px;
-    width: 250px;
+  .writing {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .fun-thumb {
-    height: 200px;
-    width: 200px;
-    border-radius: 15px 15px 0px 15px;
-  }
-
-  .info-box {
+  .web-dev {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 190px;
-    padding: 0;
-    border-radius: 15px 15px 0px 15px;
-    background-color: black;
-  }
-
-  .info-box > div > p {
-    font-family: 'Major Mono Display', monospace;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-
-  }
-
-  .fun-just-copy {
-    position: relative;
   }
 
   /*selected writing*/
 
   .selected-writings{
-    padding: 0px 30px 0px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 2;
-
-  }
-
-  .selected-writings > h1 {
-    color: black;
-    font-size: 60px;
-    padding-bottom: 15px;
   }
 
   .writing-header:first-letter {
@@ -846,8 +662,6 @@
   .writing-links{
     list-style: none;
     padding-right: 60px;
-    position: relative;
-
   }
 
   .writing-links > li {
@@ -861,6 +675,99 @@
 
   .writing-footer {
     padding-top: 10px;
+  }
+
+
+  /*selected dev*/
+
+  .selected-dev{
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dev-header:first-letter{
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 55px;
+    float: left;
+    line-height: .9;
+    padding-right: 10px;
+  }
+
+  .projects {
+    padding: 5px 10px 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .project {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .project-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  #project-head-odd {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+
+    border: 1px green dotted;
+
+  }
+
+  #project-head-even {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+
+    border: 1px green dotted;
+
+  }
+
+  .project-head > h1 {
+    background: black;
+    padding: 5px;
+    border-radius: 15px 15px 15px 0px;
+  }
+
+  .demo-arrow {
+    padding-top: 9px;
+    padding-left: 5px;
+    color: tomato;
+  }
+
+  .demo {
+    margin-top: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: gainsboro;
   }
 
   /*design container*/
