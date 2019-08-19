@@ -574,9 +574,9 @@
   }
 
   .prof-pic {
-    height: 300px;
-    width: 300px;
-    padding: 15px;
+    height: 330px;
+    width: 330px;
+    margin: 35px 0px 35px 30px;
   }
 
   .bio-copy {
