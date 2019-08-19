@@ -58,7 +58,7 @@ class WorkContainer extends Component {
 			<div className="work-container">
 				<div className='space-0' />
 				<ScrollableAnchor id={'beatgrinder'} >
-					<div className='space-1' />
+					<div className='space-0' />
 				</ScrollableAnchor>
 				<Fade clear opposite when={this.state.show1}>
 					<div className="project" id="project-1">

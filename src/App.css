@@ -367,10 +367,6 @@
     font-size: 20px;
   }
 
-  h1:hover {
-    text-transform: uppercase;
-  }
-
   h2 {
     font-size: 15px;
     text-transform: uppercase;
@@ -514,7 +510,6 @@
   }
 
   .nav > li:hover{
-    text-transform: uppercase;
     color: tomato;
   }
 
@@ -554,12 +549,6 @@
     margin-left: .3em;
   }
 
-  .drop-cap-graf:hover:first-letter {
-    color: tomato;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
   .bio {
     padding-top: 30px;
     display: flex;
@@ -597,10 +586,6 @@
     font-family: 'Major Mono Display', monospace;
   }
 
-  .skills-head:hover {
-    text-transform: uppercase;
-  }
-
   .skill-labels {
     display: flex;
     justify-content: center;
@@ -618,7 +603,7 @@
   /*work container*/
 
   .work-container {
-    padding-top: 30px;
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -656,11 +641,6 @@
     float: left;
     line-height: .9;
     padding-right: 10px;
-  }
-
-  .writing-header:hover:first-letter{
-    text-transform: uppercase;
-    color: tomato;
   }
 
   .writing-links{
@@ -796,11 +776,6 @@
     padding-right: 10px;
   }
 
-  .design-header:hover:first-letter{
-    text-transform: uppercase;
-    color: tomato;
-  }
-
   .design-port {
     padding: 30px 0px 30px 0px;
     width: 80%;
@@ -851,10 +826,6 @@
     position: absolute;
   }
 
-  /*spacers(until I learn a better way)*/
-  .space-0 {
-    height: 80px;
-  }
 }
 
 

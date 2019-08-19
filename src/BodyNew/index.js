@@ -35,10 +35,10 @@ class BodyNew extends Component {
 
 		            />
 
-		            <a href='#play'>
+		            <a href='#work'>
 			            <div className='scroll-instruction'>
 			            	<Fade bottom opposite>
-								<h1>non-dev work</h1>
+								<h1>work</h1>
 								<Icon size='large' name='chevron down' className='scroll-arrow' />
 							</Fade>
 						</div>	

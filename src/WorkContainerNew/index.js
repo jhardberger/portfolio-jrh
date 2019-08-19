@@ -17,6 +17,10 @@ class WorkContainerNew extends Component {
 		return(
 			<div className='work-container'>
 
+				<ScrollableAnchor id={'work'} >
+					<div className='space-1' />
+				</ScrollableAnchor>
+
 				<div className='writing'>
 					<SelectedWritings />
 				</div>
