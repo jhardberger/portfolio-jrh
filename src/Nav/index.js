@@ -7,7 +7,7 @@ class Nav extends Component {
 	render(){
 		const style  	   = this.props.style;
 		const handleModal  = this.props.handleModal;
-		const handleResume = this.props.handleResume;
+		// const handleResume = this.props.handleResume;
 
 		return(
 			<div className='nav-bar' style={style} >
@@ -17,7 +17,6 @@ class Nav extends Component {
 				<ul className='nav'>
 					<li><a href='#hi'> hi </a></li>
 					<li><a href='#work'> work </a></li>
-					<li onClick={handleResume}><a href='javascript:;'> résumé </a></li>
 					<li onClick={handleModal}><a href='javascript:;'> contact </a></li>
 				</ul>
 				<div className='mobile-nav'>
