@@ -16,7 +16,7 @@ const DropLine = (props) => {
 
 	return(
 		<div className='drop-line-container'>
-			<h1>questions? feedbacks? proposals of marriage?</h1>
+			<h1>questions? feedback? proposals of marriage?</h1>
 			<a href='javascript:;'>
 				<Bounce top cascade>
 					<span className='drop-line-org' onClick={props.handleModal}>

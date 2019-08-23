@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-import Nav           from '../Nav/index';
-import Bio           from '../Bio/index';
+import Nav           	from '../Nav/index';
+import Bio           	from '../Bio/index';
 import WorkContainerNew from '../WorkContainerNew/index';
-import DropLine		 from '../DropLine/index';
-import Footer		 from '../Footer/index';
+import Design 			from '../Design/index';
+import DropLine		 	from '../DropLine/index';
+import Footer			from '../Footer/index';
 
 import { StickyContainer, Sticky }  from 'react-sticky';
 import { Fade } 					from 'react-reveal';
@@ -51,6 +52,11 @@ class BodyNew extends Component {
 		            <ScrollableAnchor id={'work'}>
 		            	<WorkContainerNew />
 		            </ScrollableAnchor>
+
+		           	<Design 
+		            	showDesign={this.props.showDesign} 
+						handleDesignModal={this.props.handleDesignModal}
+		            />
 
 		            <DropLine 
 		            	handleModal={this.props.handleModal} 
