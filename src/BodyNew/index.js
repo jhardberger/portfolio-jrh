@@ -10,6 +10,10 @@ import { StickyContainer, Sticky }  from 'react-sticky';
 import { Fade } 					from 'react-reveal';
 import { Icon } 					from 'semantic-ui-react';
 
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
+configureAnchors({offset: 0, scrollDuration: 200});
+
 class BodyNew extends Component {
 	render(){
 		return(
@@ -44,7 +48,9 @@ class BodyNew extends Component {
 						</div>	
 		            </a>
 
-		            <WorkContainerNew />
+		            <ScrollableAnchor id={'work'}>
+		            	<WorkContainerNew />
+		            </ScrollableAnchor>
 
 		            <DropLine 
 		            	handleModal={this.props.handleModal} 
