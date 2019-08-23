@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Nav           from '../Nav/index';
 import Bio           from '../Bio/index';
 import WorkContainerNew from '../WorkContainerNew/index';
-import FunStuff		 from '../FunStuff/index';
+import DropLine		 from '../DropLine/index';
 import Footer		 from '../Footer/index';
 
 import { StickyContainer, Sticky }  from 'react-sticky';
@@ -45,7 +45,14 @@ class BodyNew extends Component {
 		            </a>
 
 		            <WorkContainerNew />
+
+		            <DropLine 
+		            	handleModal={this.props.handleModal} 
+		            />
+
 			    </div>
+
+			    <Footer />
 
 	 		</StickyContainer>
 		)

@@ -812,6 +812,41 @@
     padding: 10px;
   }
 
+  /*dropline*/
+
+  .drop-line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0px 90px 0px;
+  }
+
+  .drop-line-container > h1 {
+    color: black;
+  }
+
+  .drop-line-org {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .drop-line-org:hover {
+    border-bottom: 2px black solid;
+  }
+
+  .drop-line {
+    color: black;
+    font-size: 65px;
+    margin: 5px;
+  }
+
+  .drop-line:hover {
+    text-transform: capitalize;
+  }
+
   /*footer container*/
 
   .footer {
