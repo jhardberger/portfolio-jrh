@@ -74,7 +74,7 @@ class SelectedDev extends Component {
 					<h1>web dev</h1>
 					<ScrollableAnchor id={'dev'}>
 						<div className='dev-header'>
-							i have always been been fascinated by graphic and web design, and in December 2018, I decided to parlay that passion into a new set of skills through General Assembly's Web Development Immersive. Here are some apps I wrote while at GA and in my free time after completing the course.
+							i have always been been fascinated by graphic and web design, and in 2018, I decided to parlay that passion into a new set of skills through General Assembly's Web Development Immersive. Here are some apps I wrote while at GA and in my free time after completing the course.
 						</div>
 					</ScrollableAnchor>
 
@@ -95,7 +95,7 @@ class SelectedDev extends Component {
 										</Fade>
 									</div>
 									<div className='project-copy'>
-										My enterprise project for GA: a full-stack app that uses Spotify's API to churns out free-range, organic music recommendations.  
+										My enterprise project for GA: a full-stack app that uses Spotify's API to churns out free-range, organic music recommendations. 
 									</div>
 								</div>
 							</div>
