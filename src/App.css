@@ -24,6 +24,7 @@
 
   .scroll-instruction {
     padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +108,7 @@
   .scroll {
     position: absolute;
     top: 0;
-    bottom: 100px;
+    bottom: 200px;
     left: 0;
     right: 0;
     display: flex;
@@ -130,10 +131,6 @@
   }
 
   .nav {
-    display: none;
-  }
-
-  .nav-name{
     display: none;
   }
 
@@ -199,57 +196,6 @@
     text-align: center;
   }
 
-  /*skills container*/
-
-  .skills {
-    display: none;
-  }
-
-  /*fun stuff container*/
-
-  .fun-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-  }
-
-  .fun {
-    height: 250px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fun-thumb {
-    height: 200px;
-    width: 200px;
-    border-radius: 15px 15px 0px 15px;
-  }
-
-  .info-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-    border-radius: 15px 15px 0px 15px;
-    background-color: black;
-  }
-
-  .info-box > div > p {
-    font-family: 'Major Mono Display', monospace;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-  }
-
-  .fun-just-copy {
-    position: relative;
-  }
-
 
    /*selected writing*/
 
@@ -284,10 +230,92 @@
     padding-top: 10px;
   }
 
+  /*selected dev*/
+
+  .selected-dev{
+    padding: 0px 30px 100px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dev-header:first-letter{
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 55px;
+    float: left;
+    line-height: .9;
+    padding-right: 10px;
+  }
+
+  .projects {
+    padding: 5px 10px 5px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .project {
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .project-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  #project-head-odd {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  #project-head-even {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .project-head > h1 {
+    background: black;
+    padding: 5px;
+    border-radius: 15px 15px 15px 0px;
+  }
+
+  .demo-arrow {
+    color: white;
+  }
+
+  .demo {
+    display: none;
+  }
+
+
   /*design component*/
 
   .design {
-    padding: 0px 30px 0px 30px;
+    padding: 0px 30px 100px 30px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -318,6 +346,7 @@
 
   .enlarge {
     font-family: 'Major Mono Display', monospace;
+    font-size: 10px;
     font-weight: bold;
     text-align: center;
   }
@@ -332,6 +361,35 @@
   .design-big {
     padding: 10px;
   }
+
+  /*dropline*/
+
+  .drop-line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0px 90px 0px;
+  }
+
+  .drop-line-container > h1 {
+    color: black;
+    font-size: 10px;
+  }
+
+  .drop-line-org {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .drop-line {
+    color: tomato;
+    font-size: 30px;
+    padding: 3px;
+  }
+
 
   /*footer container*/
 

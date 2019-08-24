@@ -32,7 +32,7 @@ const Design = (props) => {
 					</Fade>
 				</div>
 				<div className='design-footer'>
-					<p>I'm also dabbling in web-based design these days—you can see some examples of that through my dev work (<a href='#beatgrinder'>above</a>), the Photo Carousel (coming soon), and this website (which looks pretty good, if I do say so myself).</p>
+					<p>I'm also dabbling in web-based design these days—you can see some examples of that through my dev work (<a href='#dev'>above</a>), the Photo Carousel (coming soon), and this website (which looks pretty good, if I do say so myself).</p>
 				</div>
 			</div>
 		</Fade>
