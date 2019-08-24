@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Bounce } 	from 'react-reveal';
+import { Fade } 	from 'react-reveal';
 
 const DropLine = (props) => { 
 
@@ -18,11 +18,11 @@ const DropLine = (props) => {
 		<div className='drop-line-container'>
 			<h1>questions? feedback? proposals of marriage?</h1>
 			<a href='javascript:;'>
-				<Bounce top cascade>
+				<Fade top cascade>
 					<span className='drop-line-org' onClick={props.handleModal}>
 						{makeDropLine()}
 					</span>
-				</Bounce>
+				</Fade>
 			</a>
 		</div>
 	)
