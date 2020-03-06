@@ -168,7 +168,6 @@
   .bio {
     padding-top: 15px;
     padding-left: 30px;
-    padding-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,6 +190,7 @@
   .bio-copy {
     text-align: left;
     padding-top: 15px;
+    padding-right: 30px;
   }
 
   .bio-copy > h1 {
