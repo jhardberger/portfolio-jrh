@@ -9,7 +9,7 @@ const Footer = () => {
 			<div className='footer-copy'>
 				<p>
 					Website and all funny jokes by me.<br />
-					John Hardberger©
+					© John Hardberger 2019
 				</p>
 			</div>
 			<div className='icons'>
